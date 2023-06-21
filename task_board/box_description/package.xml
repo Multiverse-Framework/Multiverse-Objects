@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>box_description</name>
+  <version>0.0.0</version>
+  <description>This ROS package contains the meshes and urdf files of the thi robothix grand challenge box of 2023.</description>
+
+  <maintainer email="jon-schmidt@outlook.de">Jonas Schmidt</maintainer>
+
+  <license>TODO</license>
+
+  <url type="website">https://github.com/christianpfitzner/thi_robothix_grand_challenge</url>
+
+  <!-- <author email="jane.doe@example.com">Jane Doe</author> -->
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

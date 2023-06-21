@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<robot name="task_board">
+    <link name="shell">
+        <collision>
+            <geometry>
+                <mesh filename="packge://mujoco_sim/model/task_board/task_board/stl/ShellBottom.stl"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.0 0.075039 -0.039751" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.25655 0.0036 0.079502"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.0 -0.075039 -0.039751" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.25655 0.0036 0.079502"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.125881 0.0 -0.039751" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.003514 0.15495 0.079502"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.125881 0.0 -0.039751" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.003514 0.15495 0.079502"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.0 -0.057742 -0.001651" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.25655 0.03819 0.003302"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.0 0.062595 -0.001651" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.25655 0.028484 0.003302"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.059527 0.0 -0.001651" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.136222 0.15495 0.003302"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.10611 0.0 -0.001651" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.043054 0.15495 0.003302"/>
+            </geometry>
+        </collision>
+    </link>
+</robot>
