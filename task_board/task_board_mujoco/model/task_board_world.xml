@@ -31,6 +31,7 @@
             <geom type="mesh" mesh="task_board_tool_2" />
             <geom type="mesh" mesh="task_board_tool_3" />
             <geom type="mesh" mesh="task_board_tool_4" />
+            <geom type="sphere" pos="0 -0.056582 0" size="0.00099" />
         </body>
     </worldbody>
 
