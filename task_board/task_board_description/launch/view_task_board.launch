@@ -1,7 +1,7 @@
 <launch>
 
   <param name="robot_description"
-    command="$(find xacro)/xacro '$(find box_description)/urdf/box.urdf.xacro'" />
+    command="$(find xacro)/xacro '$(find task_board_description)/urdf/task_board.urdf'" />
 
   <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui"
     type="joint_state_publisher_gui" />
