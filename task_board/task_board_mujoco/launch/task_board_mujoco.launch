@@ -1,0 +1,13 @@
+<launch>
+
+    <arg name="dummy" default="$(find mujoco_sim)/model/test/dummy.xml" />
+    <arg name="world" default="$(find task_board_mujoco)/model/task_board_world.xml" />
+    <arg name="config" default="$(find task_board_mujoco)/config/task_board.yaml" />
+
+    <include file="$(find mujoco_sim)/launch/mujoco_sim.launch">
+        <arg name="robot" value="$(arg dummy)" />
+        <arg name="world" value="$(arg world)" />
+        <arg name="config" value="$(arg config)" />
+    </include>
+
+</launch>
