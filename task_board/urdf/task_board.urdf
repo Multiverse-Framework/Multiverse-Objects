@@ -3,259 +3,259 @@
     <link name="task_board_main">
         <visual>
             <geometry>
-                <mesh filename="package://task_board_description/meshes/visual/task_board_main.dae" />
+                <mesh filename="package://task_board/meshes/visual/task_board_main.dae" />
             </geometry>
         </visual>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_1.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_1.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_2.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_2.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_3.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_3.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_4.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_4.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_5.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_5.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_6.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_6.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_7.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_7.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_8.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_8.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_9.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_9.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_10.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_10.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_11.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_11.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_12.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_12.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_13.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_13.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_14.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_14.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_15.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_15.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_16.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_16.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_17.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_17.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_18.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_18.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_19.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_19.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_20.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_20.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_21.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_21.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_22.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_22.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_23.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_23.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_24.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_24.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_25.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_25.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_26.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_26.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_27.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_27.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_28.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_28.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_29.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_29.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_30.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_30.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_31.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_31.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_32.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_32.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_33.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_33.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_34.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_34.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_35.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_35.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_36.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_36.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_37.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_37.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_38.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_38.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_39.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_39.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_40.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_40.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_41.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_41.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_part_42.stl" />
+                    filename="package://task_board/meshes/collision/task_board_part_42.stl" />
             </geometry>
         </collision>
     </link>
@@ -267,13 +267,13 @@
     <link name="task_board_clock">
         <visual>
             <geometry>
-                <mesh filename="package://task_board_description/meshes/visual/task_board_clock.dae" />
+                <mesh filename="package://task_board/meshes/visual/task_board_clock.dae" />
             </geometry>
         </visual>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_clock.stl" />
+                    filename="package://task_board/meshes/collision/task_board_clock.stl" />
             </geometry>
         </collision>
     </link>
@@ -285,231 +285,231 @@
     <link name="task_board_hole_1">
         <visual>
             <geometry>
-                <mesh filename="package://task_board_description/meshes/visual/task_board_hole.dae" />
+                <mesh filename="package://task_board/meshes/visual/task_board_hole.dae" />
             </geometry>
         </visual>
         <collision>
             <origin rpy="0 0 0" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 0.19634954084936207" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 0.39269908169872414" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 0.5890486225480862" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 0.7853981633974483" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 0.9817477042468103" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 1.1780972450961724" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 1.3744467859455345" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 1.5707963267948966" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 1.7671458676442586" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 1.9634954084936207" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 2.159844949342983" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 2.356194490192345" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 2.552544031041707" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 2.748893571891069" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 2.9452431127404313" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 3.141592653589793" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 3.3379421944391554" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 3.5342917352885173" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 3.7306412761378795" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 3.9269908169872414" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 4.123340357836604" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 4.319689898685966" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 4.516039439535327" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 4.71238898038469" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 4.908738521234052" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 5.105088062083414" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 5.301437602932776" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 5.497787143782138" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 5.6941366846315" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 5.8904862254808625" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 6.086835766330224" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
     </link>
@@ -521,231 +521,231 @@
     <link name="task_board_hole_2">
         <visual>
             <geometry>
-                <mesh filename="package://task_board_description/meshes/visual/task_board_hole.dae" />
+                <mesh filename="package://task_board/meshes/visual/task_board_hole.dae" />
             </geometry>
         </visual>
         <collision>
             <origin rpy="0 0 0" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 0.19634954084936207" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 0.39269908169872414" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 0.5890486225480862" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 0.7853981633974483" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 0.9817477042468103" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 1.1780972450961724" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 1.3744467859455345" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 1.5707963267948966" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 1.7671458676442586" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 1.9634954084936207" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 2.159844949342983" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 2.356194490192345" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 2.552544031041707" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 2.748893571891069" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 2.9452431127404313" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 3.141592653589793" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 3.3379421944391554" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 3.5342917352885173" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 3.7306412761378795" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 3.9269908169872414" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 4.123340357836604" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 4.319689898685966" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 4.516039439535327" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 4.71238898038469" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 4.908738521234052" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 5.105088062083414" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 5.301437602932776" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 5.497787143782138" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 5.6941366846315" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 5.8904862254808625" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 6.086835766330224" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
     </link>
@@ -757,231 +757,231 @@
     <link name="task_board_hole_3">
         <visual>
             <geometry>
-                <mesh filename="package://task_board_description/meshes/visual/task_board_hole.dae" />
+                <mesh filename="package://task_board/meshes/visual/task_board_hole.dae" />
             </geometry>
         </visual>
         <collision>
             <origin rpy="0 0 0" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 0.19634954084936207" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 0.39269908169872414" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 0.5890486225480862" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 0.7853981633974483" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 0.9817477042468103" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 1.1780972450961724" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 1.3744467859455345" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 1.5707963267948966" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 1.7671458676442586" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 1.9634954084936207" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 2.159844949342983" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 2.356194490192345" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 2.552544031041707" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 2.748893571891069" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 2.9452431127404313" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 3.141592653589793" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 3.3379421944391554" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 3.5342917352885173" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 3.7306412761378795" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 3.9269908169872414" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 4.123340357836604" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 4.319689898685966" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 4.516039439535327" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 4.71238898038469" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 4.908738521234052" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 5.105088062083414" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 5.301437602932776" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 5.497787143782138" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 5.6941366846315" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 5.8904862254808625" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
         <collision>
             <origin rpy="0 0 6.086835766330224" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_hole_side.stl" />
+                    filename="package://task_board/meshes/collision/task_board_hole_side.stl" />
             </geometry>
         </collision>
     </link>
@@ -995,19 +995,19 @@
     <link name="task_board_lid">
         <visual>
             <geometry>
-                <mesh filename="package://task_board_description/meshes/visual/task_board_lid.dae" />
+                <mesh filename="package://task_board/meshes/visual/task_board_lid.dae" />
             </geometry>
         </visual>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_lid.stl" />
+                    filename="package://task_board/meshes/collision/task_board_lid.stl" />
             </geometry>
         </collision>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_lid_hinge.stl" />
+                    filename="package://task_board/meshes/collision/task_board_lid_hinge.stl" />
             </geometry>
         </collision>
     </link>
@@ -1020,7 +1020,7 @@
         <visual>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/visual/task_board_lid_knob.dae" />
+                    filename="package://task_board/meshes/visual/task_board_lid_knob.dae" />
             </geometry>
         </visual>
         <collision>
@@ -1047,13 +1047,13 @@
         <visual>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/visual/task_board_slider.dae" />
+                    filename="package://task_board/meshes/visual/task_board_slider.dae" />
             </geometry>
         </visual>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_slider.stl" />
+                    filename="package://task_board/meshes/collision/task_board_slider.stl" />
             </geometry>
         </collision>
     </link>
@@ -1068,13 +1068,13 @@
         <visual>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/visual/task_board_button.dae" />
+                    filename="package://task_board/meshes/visual/task_board_button.dae" />
             </geometry>
         </visual>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_button.stl" />
+                    filename="package://task_board/meshes/collision/task_board_button.stl" />
             </geometry>
         </collision>
     </link>
@@ -1089,13 +1089,13 @@
         <visual>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/visual/task_board_button.dae" />
+                    filename="package://task_board/meshes/visual/task_board_button.dae" />
             </geometry>
         </visual>
         <collision>
             <geometry>
                 <mesh
-                    filename="package://task_board_description/meshes/collision/task_board_button.stl" />
+                    filename="package://task_board/meshes/collision/task_board_button.stl" />
             </geometry>
         </collision>
     </link>

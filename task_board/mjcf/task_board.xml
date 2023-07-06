@@ -214,9 +214,9 @@
     </worldbody>
     <equality/>
     <contact>
-        <exclude body1="task_board" body2="task_board_lid"/>
-        <exclude body1="task_board" body2="task_board_slider"/>
-        <exclude body1="task_board" body2="task_board_button_1"/>
-        <exclude body1="task_board" body2="task_board_button_2"/>
+        <exclude body1="task_board_main" body2="task_board_lid"/>
+        <exclude body1="task_board_main" body2="task_board_slider"/>
+        <exclude body1="task_board_main" body2="task_board_button_1"/>
+        <exclude body1="task_board_main" body2="task_board_button_2"/>
     </contact>
 </mujoco>

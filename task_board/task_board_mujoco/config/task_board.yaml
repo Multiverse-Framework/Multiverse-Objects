@@ -1,8 +1,0 @@
-send:
-  task_board_button_1: [position, quaternion]
-  task_board_button_2: [position, quaternion]
-  task_board_lid: [position, quaternion]
-  task_board_slider: [position, quaternion]
-
-receive:
-  task_board_tool: [position, quaternion]
