@@ -13,11 +13,10 @@ def spawn_task_board() -> None:
     rospack = rospkg.RosPack()
 
     object_status = ObjectStatus()
-    object_status.info.name = 'task_board'
+    object_status.info.name = "task_board"
     object_status.info.type = ObjectInfo.MESH
     object_status.info.movable = True
-    object_status.info.mesh = rospack.get_path(
-        "task_board") + '/mjcf/task_board.xml'
+    object_status.info.mesh = rospack.get_path("task_board") + "/mjcf/task_board.xml"
     object_status.info.size.x = 1
     object_status.info.size.y = 1
     object_status.info.size.z = 1
@@ -33,9 +32,7 @@ def spawn_task_board() -> None:
     objects.objects = [object_status]
     rospy.wait_for_service("/mujoco/spawn_objects")
     try:
-        spawn_objects = rospy.ServiceProxy(
-            "/mujoco/spawn_objects", SpawnObject
-        )
+        spawn_objects = rospy.ServiceProxy("/mujoco/spawn_objects", SpawnObject)
         spawn_resp = spawn_objects(objects)
         rospy.loginfo("Spawn response: " + str(spawn_resp))
     except rospy.ServiceException as error:
@@ -45,9 +42,7 @@ def spawn_task_board() -> None:
 def reset_simulation():
     rospy.wait_for_service("/mujoco/reset")
     try:
-        reset_service = rospy.ServiceProxy(
-            "/mujoco/reset", Trigger
-        )
+        reset_service = rospy.ServiceProxy("/mujoco/reset", Trigger)
         reset_service(TriggerRequest())
     except rospy.ServiceException as error:
         print(f"Service call failed: {error}")
