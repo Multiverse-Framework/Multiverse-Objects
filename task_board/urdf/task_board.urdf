@@ -259,7 +259,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="task_board_clock_joint_0" type="fixed">
+    <joint name="task_board_clock_joint" type="fixed">
         <parent link="task_board_main" />
         <child link="task_board_clock" />
         <origin rpy="0 0 0" xyz="0.02361 0.09598 0.086058" />
@@ -277,7 +277,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="task_board_hole_1_joint_0" type="fixed">
+    <joint name="task_board_hole_1_joint" type="fixed">
         <parent link="task_board_main" />
         <child link="task_board_hole_1" />
         <origin rpy="0 0 0" xyz="-0.0191 0.039 0.0734" />
@@ -513,7 +513,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="task_board_hole_2_joint_0" type="fixed">
+    <joint name="task_board_hole_2_joint" type="fixed">
         <parent link="task_board_main" />
         <child link="task_board_hole_2" />
         <origin rpy="0 0 0" xyz="-0.044 0.039 0.0734" />
@@ -749,7 +749,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="task_board_hole_3_joint_0" type="fixed">
+    <joint name="task_board_hole_3_joint" type="fixed">
         <parent link="task_board_main" />
         <child link="task_board_hole_3" />
         <origin rpy="0 -1.5707963267948966 0" xyz="0.037334 -0.102 0.0963" />
@@ -985,7 +985,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="task_board_lid_joint_0" type="revolute">
+    <joint name="task_board_lid_joint" type="revolute">
         <parent link="task_board_main" />
         <child link="task_board_lid" />
         <origin rpy="0 0 0" xyz="0.033026 -0.0472 0.079405" />
@@ -1011,7 +1011,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="task_board_lid_knob_joint_0" type="fixed">
+    <joint name="task_board_lid_knob_joint" type="fixed">
         <parent link="task_board_lid" />
         <child link="task_board_lid_knob" />
         <origin rpy="0 0 0" xyz="-0.066776 0.0 0.010587" />
@@ -1036,7 +1036,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="task_board_slider_joint_0" type="prismatic">
+    <joint name="task_board_slider_joint" type="prismatic">
         <parent link="task_board_main" />
         <child link="task_board_slider" />
         <origin rpy="0 0 0" xyz="0.04301 0.061594 0.082959" />
@@ -1057,7 +1057,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="task_board_button_1_joint_0" type="prismatic">
+    <joint name="task_board_button_1_joint" type="prismatic">
         <parent link="task_board_main" />
         <child link="task_board_button_1" />
         <origin rpy="0 0 0" xyz="-0.043957 0.09625 0.0835" />
@@ -1078,7 +1078,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="task_board_button_2_joint_0" type="prismatic">
+    <joint name="task_board_button_2_joint" type="prismatic">
         <parent link="task_board_main" />
         <child link="task_board_button_2" />
         <origin rpy="0 0 0" xyz="-0.02995 0.09625 0.0835" />
