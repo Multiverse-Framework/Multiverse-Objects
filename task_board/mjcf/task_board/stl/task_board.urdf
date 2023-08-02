@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <robot name="task_board">
     <mujoco>
-        <compiler balanceinertia="true" discardvisual="true" boundmass="0.000001" boundinertia="0.000001" meshdir="/media/giang/Storage/Multiverse/multiverse_ws/src/multiverse_objects/task_board/task_board_mujoco/model/task_board/stl" strippath="false"/>
+        <compiler fusestatic="false" balanceinertia="true" discardvisual="true" boundmass="0.000001" boundinertia="0.000001" meshdir="/media/giang/Storage/Multiverse/multiverse_ws/src/multiverse_objects/task_board/mjcf/task_board/stl" strippath="false"/>
     </mujoco>
     <link name="task_board_main">
         <visual>
             <geometry>
-                <mesh filename="package://task_board_description/meshes/visual/task_board_main.dae"/>
+                <mesh filename="package://task_board/meshes/visual/task_board_main.dae"/>
             </geometry>
         </visual>
         <collision>
@@ -220,7 +220,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="task_board_clock_joint" type="fixed">
+    <joint name="task_board_clock_joint_0" type="fixed">
         <parent link="task_board_main"/>
         <child link="task_board_clock"/>
         <origin rpy="0 0 0" xyz="0.02361 0.09598 0.086058"/>
@@ -228,7 +228,7 @@
     <link name="task_board_clock">
         <visual>
             <geometry>
-                <mesh filename="package://task_board_description/meshes/visual/task_board_clock.dae"/>
+                <mesh filename="package://task_board/meshes/visual/task_board_clock.dae"/>
             </geometry>
         </visual>
         <collision>
@@ -237,7 +237,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="task_board_hole_1_joint" type="fixed">
+    <joint name="task_board_hole_1_joint_0" type="fixed">
         <parent link="task_board_main"/>
         <child link="task_board_hole_1"/>
         <origin rpy="0 0 0" xyz="-0.0191 0.039 0.0734"/>
@@ -245,7 +245,7 @@
     <link name="task_board_hole_1">
         <visual>
             <geometry>
-                <mesh filename="package://task_board_description/meshes/visual/task_board_hole.dae"/>
+                <mesh filename="package://task_board/meshes/visual/task_board_hole.dae"/>
             </geometry>
         </visual>
         <collision>
@@ -441,7 +441,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="task_board_hole_2_joint" type="fixed">
+    <joint name="task_board_hole_2_joint_0" type="fixed">
         <parent link="task_board_main"/>
         <child link="task_board_hole_2"/>
         <origin rpy="0 0 0" xyz="-0.044 0.039 0.0734"/>
@@ -449,7 +449,7 @@
     <link name="task_board_hole_2">
         <visual>
             <geometry>
-                <mesh filename="package://task_board_description/meshes/visual/task_board_hole.dae"/>
+                <mesh filename="package://task_board/meshes/visual/task_board_hole.dae"/>
             </geometry>
         </visual>
         <collision>
@@ -645,7 +645,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="task_board_hole_3_joint" type="fixed">
+    <joint name="task_board_hole_3_joint_0" type="fixed">
         <parent link="task_board_main"/>
         <child link="task_board_hole_3"/>
         <origin rpy="0 -1.5707963267948966 0" xyz="0.037334 -0.102 0.0963"/>
@@ -653,7 +653,7 @@
     <link name="task_board_hole_3">
         <visual>
             <geometry>
-                <mesh filename="package://task_board_description/meshes/visual/task_board_hole.dae"/>
+                <mesh filename="package://task_board/meshes/visual/task_board_hole.dae"/>
             </geometry>
         </visual>
         <collision>
@@ -849,7 +849,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="task_board_lid_joint" type="revolute">
+    <joint name="task_board_lid_joint_0" type="revolute">
         <parent link="task_board_main"/>
         <child link="task_board_lid"/>
         <origin rpy="0 0 0" xyz="0.033026 -0.0472 0.079405"/>
@@ -859,7 +859,7 @@
     <link name="task_board_lid">
         <visual>
             <geometry>
-                <mesh filename="package://task_board_description/meshes/visual/task_board_lid.dae"/>
+                <mesh filename="package://task_board/meshes/visual/task_board_lid.dae"/>
             </geometry>
         </visual>
         <collision>
@@ -873,7 +873,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="task_board_lid_knob_joint" type="fixed">
+    <joint name="task_board_lid_knob_joint_0" type="fixed">
         <parent link="task_board_lid"/>
         <child link="task_board_lid_knob"/>
         <origin rpy="0 0 0" xyz="-0.066776 0.0 0.010587"/>
@@ -881,7 +881,7 @@
     <link name="task_board_lid_knob">
         <visual>
             <geometry>
-                <mesh filename="package://task_board_description/meshes/visual/task_board_lid_knob.dae"/>
+                <mesh filename="package://task_board/meshes/visual/task_board_lid_knob.dae"/>
             </geometry>
         </visual>
         <collision>
@@ -897,7 +897,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="task_board_slider_joint" type="prismatic">
+    <joint name="task_board_slider_joint_0" type="prismatic">
         <parent link="task_board_main"/>
         <child link="task_board_slider"/>
         <origin rpy="0 0 0" xyz="0.04301 0.061594 0.082959"/>
@@ -907,7 +907,7 @@
     <link name="task_board_slider">
         <visual>
             <geometry>
-                <mesh filename="package://task_board_description/meshes/visual/task_board_slider.dae"/>
+                <mesh filename="package://task_board/meshes/visual/task_board_slider.dae"/>
             </geometry>
         </visual>
         <collision>
@@ -916,7 +916,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="task_board_button_1_joint" type="prismatic">
+    <joint name="task_board_button_1_joint_0" type="prismatic">
         <parent link="task_board_main"/>
         <child link="task_board_button_1"/>
         <origin rpy="0 0 0" xyz="-0.043957 0.09625 0.0835"/>
@@ -926,7 +926,7 @@
     <link name="task_board_button_1">
         <visual>
             <geometry>
-                <mesh filename="package://task_board_description/meshes/visual/task_board_button.dae"/>
+                <mesh filename="package://task_board/meshes/visual/task_board_button.dae"/>
             </geometry>
         </visual>
         <collision>
@@ -935,7 +935,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="task_board_button_2_joint" type="prismatic">
+    <joint name="task_board_button_2_joint_0" type="prismatic">
         <parent link="task_board_main"/>
         <child link="task_board_button_2"/>
         <origin rpy="0 0 0" xyz="-0.02995 0.09625 0.0835"/>
@@ -945,7 +945,7 @@
     <link name="task_board_button_2">
         <visual>
             <geometry>
-                <mesh filename="package://task_board_description/meshes/visual/task_board_button.dae"/>
+                <mesh filename="package://task_board/meshes/visual/task_board_button.dae"/>
             </geometry>
         </visual>
         <collision>

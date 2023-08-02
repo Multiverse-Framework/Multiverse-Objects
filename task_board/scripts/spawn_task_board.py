@@ -20,13 +20,13 @@ def spawn_task_board() -> None:
     object_status.info.size.x = 1
     object_status.info.size.y = 1
     object_status.info.size.z = 1
-    object_status.pose.position.x = 0.6
+    object_status.pose.position.x = -0.6
     object_status.pose.position.y = 0.0
     object_status.pose.position.z = 1.05
     object_status.pose.orientation.x = 0.0
     object_status.pose.orientation.y = 0.0
-    object_status.pose.orientation.z = 0.0
-    object_status.pose.orientation.w = 1.0
+    object_status.pose.orientation.z = 1.0
+    object_status.pose.orientation.w = 0.0
 
     objects = SpawnObjectRequest()
     objects.objects = [object_status]
