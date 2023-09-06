@@ -13,11 +13,11 @@
             <geom size="0.170156 0.0025 0.1675" pos="0 0.1575 -0.0025" type="box" />
             <geom size="0.170156 0.0025 0.1675" pos="0 -0.1575 -0.0025" type="box" />
             <body name="box_flap_side_1" pos="0.17 0 0.166" gravcomp="0">
-                <joint name="box_flap_side_1_joint" axis="0 1 0" springref="1.57"  stiffness="0.232" damping="0.1" />
+                <joint name="box_flap_side_1_joint" axis="0 1 0" springref="1.57"  stiffness="0.235" damping="0.1" />
                 <geom type="mesh" mesh="BoxFlapSide1" />
             </body>
             <body name="box_flap_side_2" pos="-0.17 0 0.168" gravcomp="0">
-                <joint name="box_flap_side_2_joint" axis="0 -1 0" stiffness="0.01" damping="0.1" />
+                <joint name="box_flap_side_2_joint" axis="0 -1 0" stiffness="0.001" damping="0.1" />
                 <geom type="mesh" mesh="BoxFlapSide2" />
             </body>
         </body>
