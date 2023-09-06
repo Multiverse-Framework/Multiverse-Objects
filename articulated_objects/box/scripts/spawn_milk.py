@@ -17,6 +17,9 @@ def spawn_box() -> None:
     object_status.info.type = ObjectInfo.CUBE
     object_status.info.movable = True
 
+    object_status.info.inertial.ixx = 0.0008
+    object_status.info.inertial.iyy = 0.0008
+    object_status.info.inertial.izz = 0.00015
     object_status.info.inertial.m = 0.01
 
     object_status.info.size.x = 0.03
@@ -27,7 +30,7 @@ def spawn_box() -> None:
     object_status.info.rgba.g = 1
     object_status.info.rgba.b = 0
 
-    object_status.pose.position.x = 2.5
+    object_status.pose.position.x = 2.45
     object_status.pose.position.y = 2.5
     object_status.pose.position.z = 1.0
     
@@ -59,5 +62,3 @@ def reset_simulation():
 if __name__ == "__main__":
     rospy.init_node("spawn_milk")
     spawn_box()
-    rospy.sleep(1)
-    reset_simulation()

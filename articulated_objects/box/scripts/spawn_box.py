@@ -51,5 +51,3 @@ def reset_simulation():
 if __name__ == "__main__":
     rospy.init_node("spawn_box")
     spawn_box()
-    rospy.sleep(1)
-    reset_simulation()
