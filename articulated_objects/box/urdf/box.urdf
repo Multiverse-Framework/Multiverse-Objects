@@ -40,6 +40,42 @@
             </geometry>
             <material name="DHL_color"/>
         </visual>
+        
+        <collision>
+            <origin xyz="0 0 -0.1675" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.34 0.32 0.005"/>
+            </geometry>
+            <material name="DHL_color"/>
+        </collision>
+        <collision>
+            <origin xyz="0.167578  0 -0.0025" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.005156 0.32 0.335"/>
+            </geometry>
+            <material name="DHL_color"/>
+        </collision>
+        <collision>
+            <origin xyz="-0.167578  0 -0.0025" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.005156 0.32 0.335"/>
+            </geometry>
+            <material name="DHL_color"/>
+        </collision>
+        <collision>
+            <origin xyz="0 0.1575 -0.0025" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.340312 0.005 0.335"/>
+            </geometry>
+            <material name="DHL_color"/>
+        </collision>
+        <collision>
+            <origin xyz="0 -0.1575 -0.0025" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.340312 0.005 0.335"/>
+            </geometry>
+            <material name="DHL_color"/>
+        </collision>
     </link>
     <joint name="box_flap_side_1_joint" type="revolute">
         <origin xyz="0.17 0 0.166" rpy="0 0 0"/>
@@ -55,6 +91,13 @@
             </geometry>
             <material name="DHL_color"/>
         </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://articulated_objects/box/meshes/stl/BoxFlapSide1.stl"/>
+            </geometry>
+            <material name="DHL_color"/>
+        </collision>
     </link>
     <joint name="box_flap_side_2_joint" type="revolute">
         <origin xyz="-0.17 0 0.168" rpy="0 0 0"/>
@@ -70,5 +113,12 @@
             </geometry>
             <material name="DHL_color"/>
         </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://articulated_objects/box/meshes/stl/BoxFlapSide2.stl"/>
+            </geometry>
+            <material name="DHL_color"/>
+        </collision>
     </link>
 </robot>
