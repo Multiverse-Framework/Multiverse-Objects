@@ -1,4 +1,4 @@
-<mujoco model="box">
+<mujoco model="milk_box">
     <compiler angle="radian" meshdir="../meshes/obj/" texturedir="../meshes/textures/"
         autolimits="true" />
     <asset>
