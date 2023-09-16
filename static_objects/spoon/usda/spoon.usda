@@ -1,0 +1,456 @@
+#usda 1.0
+(
+    defaultPrim = "spoon"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def "SOMA"
+{
+    class "_class_Spoon" (
+        apiSchemas = ["RdfAPI"]
+    )
+    {
+        string rdf:conceptName = "Spoon"
+        string rdf:namespace = "http://www.ease-crc.org/ont/SOMA.owl#"
+    }
+}
+
+def Xform "spoon" (
+    apiSchemas = ["SemanticTagAPI"]
+)
+{
+    rel semanticTag:semanticLabel = </SOMA/_class_Spoon>
+    matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+    uniform token[] xformOpOrder = ["xformOp:transform"]
+
+    def Xform "spoon_visual_0" (
+        prepend references = @./../meshes/usd/visual/SM_Spoon.usda@</SM_Spoon>
+    )
+    {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "SM_Spoon" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </_materials/M_Spoon>
+        }
+    }
+
+    def Xform "spoon_collision_0" (
+        prepend apiSchemas = ["PhysicsMassAPI"]
+        prepend references = @./../meshes/usd/collision/SM_Spoon_1.usda@</SM_Spoon_1>
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float physics:density = 100
+        float3 physics:diagonalInertia = (-0.00038842924, -0.00017692252, 0.0008974927)
+        float physics:mass = 0.00028866105
+        quatf physics:principalAxes = (0.32218954, -0.1334753, 0.20762871, 0.9139303)
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "SM_Spoon_1" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            uniform token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 1
+            color3f[] primvars:displayColor = [(1, 0, 0)]
+            float[] primvars:displayOpacity = [0.5]
+        }
+    }
+
+    def Xform "spoon_collision_1" (
+        prepend apiSchemas = ["PhysicsMassAPI"]
+        prepend references = @./../meshes/usd/collision/SM_Spoon_2.usda@</SM_Spoon_2>
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float physics:density = 100
+        float3 physics:diagonalInertia = (-0.000005419112, -0.0000024275753, 0.000012695108)
+        float physics:mass = 0.000007555771
+        quatf physics:principalAxes = (0.31251633, -0.12854227, 0.20170137, 0.9193079)
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "SM_Spoon_2" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            uniform token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 1
+            color3f[] primvars:displayColor = [(1, 0, 0)]
+            float[] primvars:displayOpacity = [0.5]
+        }
+    }
+
+    def Xform "spoon_collision_2" (
+        prepend apiSchemas = ["PhysicsMassAPI"]
+        prepend references = @./../meshes/usd/collision/SM_Spoon_3.usda@</SM_Spoon_3>
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float physics:density = 100
+        float3 physics:diagonalInertia = (-0.000020880472, -0.000009819287, 0.000050187373)
+        float physics:mass = 0.000014726714
+        quatf physics:principalAxes = (0.32993186, -0.13779959, 0.20824854, 0.9103784)
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "SM_Spoon_3" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            uniform token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 1
+            color3f[] primvars:displayColor = [(1, 0, 0)]
+            float[] primvars:displayOpacity = [0.5]
+        }
+    }
+
+    def Xform "spoon_collision_3" (
+        prepend apiSchemas = ["PhysicsMassAPI"]
+        prepend references = @./../meshes/usd/collision/SM_Spoon_4.usda@</SM_Spoon_4>
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float physics:density = 100
+        float3 physics:diagonalInertia = (-0.0000086638465, -0.0000043224736, 0.00002184456)
+        float physics:mass = 0.0000059602967
+        quatf physics:principalAxes = (0.24528846, -0.09608157, 0.15679316, 0.9518497)
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "SM_Spoon_4" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            uniform token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 1
+            color3f[] primvars:displayColor = [(1, 0, 0)]
+            float[] primvars:displayOpacity = [0.5]
+        }
+    }
+
+    def Xform "spoon_collision_4" (
+        prepend apiSchemas = ["PhysicsMassAPI"]
+        prepend references = @./../meshes/usd/collision/SM_Spoon_5.usda@</SM_Spoon_5>
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float physics:density = 100
+        float3 physics:diagonalInertia = (-0.000008663846, -0.0000043224736, 0.000021844558)
+        float physics:mass = 0.0000059602958
+        quatf physics:principalAxes = (0.24528855, -0.09608161, 0.1567932, 0.95184964)
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "SM_Spoon_5" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            uniform token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 1
+            color3f[] primvars:displayColor = [(1, 0, 0)]
+            float[] primvars:displayOpacity = [0.5]
+        }
+    }
+
+    def Xform "spoon_collision_5" (
+        prepend apiSchemas = ["PhysicsMassAPI"]
+        prepend references = @./../meshes/usd/collision/SM_Spoon_6.usda@</SM_Spoon_6>
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float physics:density = 100
+        float3 physics:diagonalInertia = (-0.000032827204, -0.000016100068, 0.00008197892)
+        float physics:mass = 0.000011251425
+        quatf physics:principalAxes = (0.35257724, -0.1499954, 0.21667783, 0.89790946)
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "SM_Spoon_6" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            uniform token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 1
+            color3f[] primvars:displayColor = [(1, 0, 0)]
+            float[] primvars:displayOpacity = [0.5]
+        }
+    }
+
+    def Xform "spoon_collision_6" (
+        prepend apiSchemas = ["PhysicsMassAPI"]
+        prepend references = @./../meshes/usd/collision/SM_Spoon_7.usda@</SM_Spoon_7>
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float physics:density = 100
+        float3 physics:diagonalInertia = (-0.00001764436, -0.000009242725, 0.000046674835)
+        float physics:mass = 0.0000150725555
+        quatf physics:principalAxes = (0.21231805, -0.08122801, 0.13471253, 0.96445614)
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "SM_Spoon_7" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            uniform token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 1
+            color3f[] primvars:displayColor = [(1, 0, 0)]
+            float[] primvars:displayOpacity = [0.5]
+        }
+    }
+
+    def Xform "spoon_collision_7" (
+        prepend apiSchemas = ["PhysicsMassAPI"]
+        prepend references = @./../meshes/usd/collision/SM_Spoon_8.usda@</SM_Spoon_8>
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float physics:density = 100
+        float3 physics:diagonalInertia = (-0.000017644361, -0.000009242726, 0.00004667484)
+        float physics:mass = 0.000015072555
+        quatf physics:principalAxes = (0.21231818, -0.08122807, 0.1347126, 0.9644561)
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "SM_Spoon_8" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            uniform token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 1
+            color3f[] primvars:displayColor = [(1, 0, 0)]
+            float[] primvars:displayOpacity = [0.5]
+        }
+    }
+
+    def Xform "spoon_collision_8" (
+        prepend apiSchemas = ["PhysicsMassAPI"]
+        prepend references = @./../meshes/usd/collision/SM_Spoon_9.usda@</SM_Spoon_9>
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float physics:density = 100
+        float3 physics:diagonalInertia = (-0.00011669316, -0.00005598737, 0.00028470875)
+        float physics:mass = 0.000033657445
+        quatf physics:principalAxes = (0.34263188, -0.14449145, 0.2137382, 0.90335023)
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "SM_Spoon_9" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            uniform token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 1
+            color3f[] primvars:displayColor = [(1, 0, 0)]
+            float[] primvars:displayOpacity = [0.5]
+        }
+    }
+
+    def Xform "spoon_collision_9" (
+        prepend apiSchemas = ["PhysicsMassAPI"]
+        prepend references = @./../meshes/usd/collision/SM_Spoon_10.usda@</SM_Spoon_10>
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float physics:density = 100
+        float3 physics:diagonalInertia = (-0.000061223516, -0.000031022493, 0.0001564525)
+        float physics:mass = 0.000042580756
+        quatf physics:principalAxes = (0.24029739, -0.09382311, 0.15321596, 0.95392835)
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "SM_Spoon_10" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            uniform token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 1
+            color3f[] primvars:displayColor = [(1, 0, 0)]
+            float[] primvars:displayOpacity = [0.5]
+        }
+    }
+
+    def Xform "spoon_collision_10" (
+        prepend apiSchemas = ["PhysicsMassAPI"]
+        prepend references = @./../meshes/usd/collision/SM_Spoon_11.usda@</SM_Spoon_11>
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float physics:density = 100
+        float3 physics:diagonalInertia = (-0.00006122352, -0.000031022497, 0.00015645252)
+        float physics:mass = 0.000042580774
+        quatf physics:principalAxes = (0.24029747, -0.093823135, 0.153216, 0.9539283)
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "SM_Spoon_11" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            uniform token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 1
+            color3f[] primvars:displayColor = [(1, 0, 0)]
+            float[] primvars:displayOpacity = [0.5]
+        }
+    }
+
+    def Xform "spoon_collision_11" (
+        prepend apiSchemas = ["PhysicsMassAPI"]
+        prepend references = @./../meshes/usd/collision/SM_Spoon_12.usda@</SM_Spoon_12>
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float physics:density = 100
+        float3 physics:diagonalInertia = (-0.00023156223, -0.00010548282, 0.000544135)
+        float physics:mass = 0.000010074189
+        quatf physics:principalAxes = (0.32519552, -0.13510469, 0.2081156, 0.9125144)
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "SM_Spoon_12" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            uniform token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 1
+            color3f[] primvars:displayColor = [(1, 0, 0)]
+            float[] primvars:displayOpacity = [0.5]
+        }
+    }
+
+    def Xform "spoon_collision_12" (
+        prepend apiSchemas = ["PhysicsMassAPI"]
+        prepend references = @./../meshes/usd/collision/SM_Spoon_13.usda@</SM_Spoon_13>
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float physics:density = 100
+        float3 physics:diagonalInertia = (-0.00009345544, -0.00004422248, 0.0002262139)
+        float physics:mass = 0.000026091462
+        quatf physics:principalAxes = (0.2821729, -0.11356162, 0.18146358, 0.9351755)
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "SM_Spoon_13" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            uniform token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 1
+            color3f[] primvars:displayColor = [(1, 0, 0)]
+            float[] primvars:displayOpacity = [0.5]
+        }
+    }
+
+    def Xform "spoon_collision_13" (
+        prepend apiSchemas = ["PhysicsMassAPI"]
+        prepend references = @./../meshes/usd/collision/SM_Spoon_14.usda@</SM_Spoon_14>
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float physics:density = 100
+        float3 physics:diagonalInertia = (-0.00009345545, -0.000044222485, 0.00022621392)
+        float physics:mass = 0.000026091471
+        quatf physics:principalAxes = (0.28217298, -0.113561675, 0.18146364, 0.9351754)
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "SM_Spoon_14" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            uniform token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 1
+            color3f[] primvars:displayColor = [(1, 0, 0)]
+            float[] primvars:displayOpacity = [0.5]
+        }
+    }
+
+    def Xform "spoon_collision_14" (
+        prepend apiSchemas = ["PhysicsMassAPI"]
+        prepend references = @./../meshes/usd/collision/SM_Spoon_15.usda@</SM_Spoon_15>
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float physics:density = 100
+        float3 physics:diagonalInertia = (-0.00007889884, -0.0000348789, 0.00018345963)
+        float physics:mass = 0.0000071432146
+        quatf physics:principalAxes = (0.32054245, -0.13260834, 0.20695703, 0.9147876)
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "SM_Spoon_15" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            uniform token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 1
+            color3f[] primvars:displayColor = [(1, 0, 0)]
+            float[] primvars:displayOpacity = [0.5]
+        }
+    }
+
+    def Xform "spoon_collision_15" (
+        prepend apiSchemas = ["PhysicsMassAPI"]
+        prepend references = @./../meshes/usd/collision/SM_Spoon_16.usda@</SM_Spoon_16>
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float physics:density = 100
+        float3 physics:diagonalInertia = (-0.000014824606, -0.0000066532507, 0.000034869)
+        float physics:mass = 0.000006549684
+        quatf physics:principalAxes = (0.3078108, -0.126166, 0.19880547, 0.92185193)
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "SM_Spoon_16" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            uniform token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 1
+            color3f[] primvars:displayColor = [(1, 0, 0)]
+            float[] primvars:displayOpacity = [0.5]
+        }
+    }
+
+    def Xform "spoon_collision_16" (
+        prepend apiSchemas = ["PhysicsMassAPI"]
+        prepend references = @./../meshes/usd/collision/SM_Spoon_17.usda@</SM_Spoon_17>
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float physics:density = 100
+        float3 physics:diagonalInertia = (-0.0000148246045, -0.000006653249, 0.00003486899)
+        float physics:mass = 0.000006549684
+        quatf physics:principalAxes = (0.30781084, -0.12616602, 0.19880547, 0.92185193)
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "SM_Spoon_17" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            uniform token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 1
+            color3f[] primvars:displayColor = [(1, 0, 0)]
+            float[] primvars:displayOpacity = [0.5]
+        }
+    }
+}
+
+def "_materials" (
+    prepend references = @./../meshes/usd/visual/SM_Spoon.usda@</_materials>
+)
+{
+}
+

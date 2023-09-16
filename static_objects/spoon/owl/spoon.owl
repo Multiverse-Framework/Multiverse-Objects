@@ -1,0 +1,935 @@
+Prefix(:=<http://www.ease-crc.org/ont/usd/spoon#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(DUL:=<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>)
+Prefix(USD:=<https://ease-crc.org/ont/USD.owl#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.ease-crc.org/ont/usd/spoon>
+Import(<file://./SOMA-HOME.owl>)
+
+Declaration(Class(USD:CollisionAPI))
+Declaration(Class(USD:MassAPI))
+Declaration(Class(USD:Prim))
+Declaration(Class(USD:XformSchema))
+Declaration(ObjectProperty(USD:hasAPI))
+Declaration(ObjectProperty(USD:hasTypedSchema))
+Declaration(NamedIndividual(DUL:SM_Spoon_10_rigidCollisionEnabled))
+Declaration(NamedIndividual(DUL:SM_Spoon_11_rigidCollisionEnabled))
+Declaration(NamedIndividual(DUL:SM_Spoon_12_rigidCollisionEnabled))
+Declaration(NamedIndividual(DUL:SM_Spoon_13_rigidCollisionEnabled))
+Declaration(NamedIndividual(DUL:SM_Spoon_14_rigidCollisionEnabled))
+Declaration(NamedIndividual(DUL:SM_Spoon_15_rigidCollisionEnabled))
+Declaration(NamedIndividual(DUL:SM_Spoon_16_rigidCollisionEnabled))
+Declaration(NamedIndividual(DUL:SM_Spoon_17_rigidCollisionEnabled))
+Declaration(NamedIndividual(DUL:SM_Spoon_1_rigidCollisionEnabled))
+Declaration(NamedIndividual(DUL:SM_Spoon_2_rigidCollisionEnabled))
+Declaration(NamedIndividual(DUL:SM_Spoon_3_rigidCollisionEnabled))
+Declaration(NamedIndividual(DUL:SM_Spoon_4_rigidCollisionEnabled))
+Declaration(NamedIndividual(DUL:SM_Spoon_5_rigidCollisionEnabled))
+Declaration(NamedIndividual(DUL:SM_Spoon_6_rigidCollisionEnabled))
+Declaration(NamedIndividual(DUL:SM_Spoon_7_rigidCollisionEnabled))
+Declaration(NamedIndividual(DUL:SM_Spoon_8_rigidCollisionEnabled))
+Declaration(NamedIndividual(DUL:SM_Spoon_9_rigidCollisionEnabled))
+Declaration(NamedIndividual(DUL:spoon_collision_0_centerOfMass))
+Declaration(NamedIndividual(DUL:spoon_collision_0_mass))
+Declaration(NamedIndividual(DUL:spoon_collision_0_xformOpOrder))
+Declaration(NamedIndividual(DUL:spoon_collision_0_xformOp_transform))
+Declaration(NamedIndividual(DUL:spoon_collision_10_centerOfMass))
+Declaration(NamedIndividual(DUL:spoon_collision_10_mass))
+Declaration(NamedIndividual(DUL:spoon_collision_10_xformOpOrder))
+Declaration(NamedIndividual(DUL:spoon_collision_10_xformOp_transform))
+Declaration(NamedIndividual(DUL:spoon_collision_11_centerOfMass))
+Declaration(NamedIndividual(DUL:spoon_collision_11_mass))
+Declaration(NamedIndividual(DUL:spoon_collision_11_xformOpOrder))
+Declaration(NamedIndividual(DUL:spoon_collision_11_xformOp_transform))
+Declaration(NamedIndividual(DUL:spoon_collision_12_centerOfMass))
+Declaration(NamedIndividual(DUL:spoon_collision_12_mass))
+Declaration(NamedIndividual(DUL:spoon_collision_12_xformOpOrder))
+Declaration(NamedIndividual(DUL:spoon_collision_12_xformOp_transform))
+Declaration(NamedIndividual(DUL:spoon_collision_13_centerOfMass))
+Declaration(NamedIndividual(DUL:spoon_collision_13_mass))
+Declaration(NamedIndividual(DUL:spoon_collision_13_xformOpOrder))
+Declaration(NamedIndividual(DUL:spoon_collision_13_xformOp_transform))
+Declaration(NamedIndividual(DUL:spoon_collision_14_centerOfMass))
+Declaration(NamedIndividual(DUL:spoon_collision_14_mass))
+Declaration(NamedIndividual(DUL:spoon_collision_14_xformOpOrder))
+Declaration(NamedIndividual(DUL:spoon_collision_14_xformOp_transform))
+Declaration(NamedIndividual(DUL:spoon_collision_15_centerOfMass))
+Declaration(NamedIndividual(DUL:spoon_collision_15_mass))
+Declaration(NamedIndividual(DUL:spoon_collision_15_xformOpOrder))
+Declaration(NamedIndividual(DUL:spoon_collision_15_xformOp_transform))
+Declaration(NamedIndividual(DUL:spoon_collision_16_centerOfMass))
+Declaration(NamedIndividual(DUL:spoon_collision_16_mass))
+Declaration(NamedIndividual(DUL:spoon_collision_16_xformOpOrder))
+Declaration(NamedIndividual(DUL:spoon_collision_16_xformOp_transform))
+Declaration(NamedIndividual(DUL:spoon_collision_1_centerOfMass))
+Declaration(NamedIndividual(DUL:spoon_collision_1_mass))
+Declaration(NamedIndividual(DUL:spoon_collision_1_xformOpOrder))
+Declaration(NamedIndividual(DUL:spoon_collision_1_xformOp_transform))
+Declaration(NamedIndividual(DUL:spoon_collision_2_centerOfMass))
+Declaration(NamedIndividual(DUL:spoon_collision_2_mass))
+Declaration(NamedIndividual(DUL:spoon_collision_2_xformOpOrder))
+Declaration(NamedIndividual(DUL:spoon_collision_2_xformOp_transform))
+Declaration(NamedIndividual(DUL:spoon_collision_3_centerOfMass))
+Declaration(NamedIndividual(DUL:spoon_collision_3_mass))
+Declaration(NamedIndividual(DUL:spoon_collision_3_xformOpOrder))
+Declaration(NamedIndividual(DUL:spoon_collision_3_xformOp_transform))
+Declaration(NamedIndividual(DUL:spoon_collision_4_centerOfMass))
+Declaration(NamedIndividual(DUL:spoon_collision_4_mass))
+Declaration(NamedIndividual(DUL:spoon_collision_4_xformOpOrder))
+Declaration(NamedIndividual(DUL:spoon_collision_4_xformOp_transform))
+Declaration(NamedIndividual(DUL:spoon_collision_5_centerOfMass))
+Declaration(NamedIndividual(DUL:spoon_collision_5_mass))
+Declaration(NamedIndividual(DUL:spoon_collision_5_xformOpOrder))
+Declaration(NamedIndividual(DUL:spoon_collision_5_xformOp_transform))
+Declaration(NamedIndividual(DUL:spoon_collision_6_centerOfMass))
+Declaration(NamedIndividual(DUL:spoon_collision_6_mass))
+Declaration(NamedIndividual(DUL:spoon_collision_6_xformOpOrder))
+Declaration(NamedIndividual(DUL:spoon_collision_6_xformOp_transform))
+Declaration(NamedIndividual(DUL:spoon_collision_7_centerOfMass))
+Declaration(NamedIndividual(DUL:spoon_collision_7_mass))
+Declaration(NamedIndividual(DUL:spoon_collision_7_xformOpOrder))
+Declaration(NamedIndividual(DUL:spoon_collision_7_xformOp_transform))
+Declaration(NamedIndividual(DUL:spoon_collision_8_centerOfMass))
+Declaration(NamedIndividual(DUL:spoon_collision_8_mass))
+Declaration(NamedIndividual(DUL:spoon_collision_8_xformOpOrder))
+Declaration(NamedIndividual(DUL:spoon_collision_8_xformOp_transform))
+Declaration(NamedIndividual(DUL:spoon_collision_9_centerOfMass))
+Declaration(NamedIndividual(DUL:spoon_collision_9_mass))
+Declaration(NamedIndividual(DUL:spoon_collision_9_xformOpOrder))
+Declaration(NamedIndividual(DUL:spoon_collision_9_xformOp_transform))
+Declaration(NamedIndividual(DUL:spoon_visual_0_xformOpOrder))
+Declaration(NamedIndividual(DUL:spoon_visual_0_xformOp_transform))
+Declaration(NamedIndividual(DUL:spoon_xformOpOrder))
+Declaration(NamedIndividual(DUL:spoon_xformOp_transform))
+Declaration(NamedIndividual(USD:spoon))
+Declaration(NamedIndividual(USD:spoon_collision_0))
+Declaration(NamedIndividual(USD:spoon_collision_0_SM_Spoon_1))
+Declaration(NamedIndividual(USD:spoon_collision_1))
+Declaration(NamedIndividual(USD:spoon_collision_10))
+Declaration(NamedIndividual(USD:spoon_collision_10_SM_Spoon_11))
+Declaration(NamedIndividual(USD:spoon_collision_11))
+Declaration(NamedIndividual(USD:spoon_collision_11_SM_Spoon_12))
+Declaration(NamedIndividual(USD:spoon_collision_12))
+Declaration(NamedIndividual(USD:spoon_collision_12_SM_Spoon_13))
+Declaration(NamedIndividual(USD:spoon_collision_13))
+Declaration(NamedIndividual(USD:spoon_collision_13_SM_Spoon_14))
+Declaration(NamedIndividual(USD:spoon_collision_14))
+Declaration(NamedIndividual(USD:spoon_collision_14_SM_Spoon_15))
+Declaration(NamedIndividual(USD:spoon_collision_15))
+Declaration(NamedIndividual(USD:spoon_collision_15_SM_Spoon_16))
+Declaration(NamedIndividual(USD:spoon_collision_16))
+Declaration(NamedIndividual(USD:spoon_collision_16_SM_Spoon_17))
+Declaration(NamedIndividual(USD:spoon_collision_1_SM_Spoon_2))
+Declaration(NamedIndividual(USD:spoon_collision_2))
+Declaration(NamedIndividual(USD:spoon_collision_2_SM_Spoon_3))
+Declaration(NamedIndividual(USD:spoon_collision_3))
+Declaration(NamedIndividual(USD:spoon_collision_3_SM_Spoon_4))
+Declaration(NamedIndividual(USD:spoon_collision_4))
+Declaration(NamedIndividual(USD:spoon_collision_4_SM_Spoon_5))
+Declaration(NamedIndividual(USD:spoon_collision_5))
+Declaration(NamedIndividual(USD:spoon_collision_5_SM_Spoon_6))
+Declaration(NamedIndividual(USD:spoon_collision_6))
+Declaration(NamedIndividual(USD:spoon_collision_6_SM_Spoon_7))
+Declaration(NamedIndividual(USD:spoon_collision_7))
+Declaration(NamedIndividual(USD:spoon_collision_7_SM_Spoon_8))
+Declaration(NamedIndividual(USD:spoon_collision_8))
+Declaration(NamedIndividual(USD:spoon_collision_8_SM_Spoon_9))
+Declaration(NamedIndividual(USD:spoon_collision_9))
+Declaration(NamedIndividual(USD:spoon_collision_9_SM_Spoon_10))
+Declaration(NamedIndividual(USD:spoon_visual_0))
+Declaration(NamedIndividual(USD:spoon_visual_0_SM_Spoon))
+Declaration(AnnotationProperty(USD:physics_centerOfMass))
+Declaration(AnnotationProperty(USD:physics_collisionEnabled))
+Declaration(AnnotationProperty(USD:physics_mass))
+Declaration(AnnotationProperty(USD:xformOpOrder))
+Declaration(AnnotationProperty(USD:xformOp_transform))
+Declaration(Datatype(USD:matrix4d))
+Declaration(Datatype(USD:point3f))
+Declaration(Datatype(USD:token_array))
+
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: DUL:SM_Spoon_10_rigidCollisionEnabled (DUL:SM_Spoon_10_rigidCollisionEnabled)
+
+AnnotationAssertion(USD:physics_collisionEnabled DUL:SM_Spoon_10_rigidCollisionEnabled "true"^^xsd:boolean)
+ClassAssertion(DUL:Quality DUL:SM_Spoon_10_rigidCollisionEnabled)
+
+# Individual: DUL:SM_Spoon_11_rigidCollisionEnabled (DUL:SM_Spoon_11_rigidCollisionEnabled)
+
+AnnotationAssertion(USD:physics_collisionEnabled DUL:SM_Spoon_11_rigidCollisionEnabled "true"^^xsd:boolean)
+ClassAssertion(DUL:Quality DUL:SM_Spoon_11_rigidCollisionEnabled)
+
+# Individual: DUL:SM_Spoon_12_rigidCollisionEnabled (DUL:SM_Spoon_12_rigidCollisionEnabled)
+
+AnnotationAssertion(USD:physics_collisionEnabled DUL:SM_Spoon_12_rigidCollisionEnabled "true"^^xsd:boolean)
+ClassAssertion(DUL:Quality DUL:SM_Spoon_12_rigidCollisionEnabled)
+
+# Individual: DUL:SM_Spoon_13_rigidCollisionEnabled (DUL:SM_Spoon_13_rigidCollisionEnabled)
+
+AnnotationAssertion(USD:physics_collisionEnabled DUL:SM_Spoon_13_rigidCollisionEnabled "true"^^xsd:boolean)
+ClassAssertion(DUL:Quality DUL:SM_Spoon_13_rigidCollisionEnabled)
+
+# Individual: DUL:SM_Spoon_14_rigidCollisionEnabled (DUL:SM_Spoon_14_rigidCollisionEnabled)
+
+AnnotationAssertion(USD:physics_collisionEnabled DUL:SM_Spoon_14_rigidCollisionEnabled "true"^^xsd:boolean)
+ClassAssertion(DUL:Quality DUL:SM_Spoon_14_rigidCollisionEnabled)
+
+# Individual: DUL:SM_Spoon_15_rigidCollisionEnabled (DUL:SM_Spoon_15_rigidCollisionEnabled)
+
+AnnotationAssertion(USD:physics_collisionEnabled DUL:SM_Spoon_15_rigidCollisionEnabled "true"^^xsd:boolean)
+ClassAssertion(DUL:Quality DUL:SM_Spoon_15_rigidCollisionEnabled)
+
+# Individual: DUL:SM_Spoon_16_rigidCollisionEnabled (DUL:SM_Spoon_16_rigidCollisionEnabled)
+
+AnnotationAssertion(USD:physics_collisionEnabled DUL:SM_Spoon_16_rigidCollisionEnabled "true"^^xsd:boolean)
+ClassAssertion(DUL:Quality DUL:SM_Spoon_16_rigidCollisionEnabled)
+
+# Individual: DUL:SM_Spoon_17_rigidCollisionEnabled (DUL:SM_Spoon_17_rigidCollisionEnabled)
+
+AnnotationAssertion(USD:physics_collisionEnabled DUL:SM_Spoon_17_rigidCollisionEnabled "true"^^xsd:boolean)
+ClassAssertion(DUL:Quality DUL:SM_Spoon_17_rigidCollisionEnabled)
+
+# Individual: DUL:SM_Spoon_1_rigidCollisionEnabled (DUL:SM_Spoon_1_rigidCollisionEnabled)
+
+AnnotationAssertion(USD:physics_collisionEnabled DUL:SM_Spoon_1_rigidCollisionEnabled "true"^^xsd:boolean)
+ClassAssertion(DUL:Quality DUL:SM_Spoon_1_rigidCollisionEnabled)
+
+# Individual: DUL:SM_Spoon_2_rigidCollisionEnabled (DUL:SM_Spoon_2_rigidCollisionEnabled)
+
+AnnotationAssertion(USD:physics_collisionEnabled DUL:SM_Spoon_2_rigidCollisionEnabled "true"^^xsd:boolean)
+ClassAssertion(DUL:Quality DUL:SM_Spoon_2_rigidCollisionEnabled)
+
+# Individual: DUL:SM_Spoon_3_rigidCollisionEnabled (DUL:SM_Spoon_3_rigidCollisionEnabled)
+
+AnnotationAssertion(USD:physics_collisionEnabled DUL:SM_Spoon_3_rigidCollisionEnabled "true"^^xsd:boolean)
+ClassAssertion(DUL:Quality DUL:SM_Spoon_3_rigidCollisionEnabled)
+
+# Individual: DUL:SM_Spoon_4_rigidCollisionEnabled (DUL:SM_Spoon_4_rigidCollisionEnabled)
+
+AnnotationAssertion(USD:physics_collisionEnabled DUL:SM_Spoon_4_rigidCollisionEnabled "true"^^xsd:boolean)
+ClassAssertion(DUL:Quality DUL:SM_Spoon_4_rigidCollisionEnabled)
+
+# Individual: DUL:SM_Spoon_5_rigidCollisionEnabled (DUL:SM_Spoon_5_rigidCollisionEnabled)
+
+AnnotationAssertion(USD:physics_collisionEnabled DUL:SM_Spoon_5_rigidCollisionEnabled "true"^^xsd:boolean)
+ClassAssertion(DUL:Quality DUL:SM_Spoon_5_rigidCollisionEnabled)
+
+# Individual: DUL:SM_Spoon_6_rigidCollisionEnabled (DUL:SM_Spoon_6_rigidCollisionEnabled)
+
+AnnotationAssertion(USD:physics_collisionEnabled DUL:SM_Spoon_6_rigidCollisionEnabled "true"^^xsd:boolean)
+ClassAssertion(DUL:Quality DUL:SM_Spoon_6_rigidCollisionEnabled)
+
+# Individual: DUL:SM_Spoon_7_rigidCollisionEnabled (DUL:SM_Spoon_7_rigidCollisionEnabled)
+
+AnnotationAssertion(USD:physics_collisionEnabled DUL:SM_Spoon_7_rigidCollisionEnabled "true"^^xsd:boolean)
+ClassAssertion(DUL:Quality DUL:SM_Spoon_7_rigidCollisionEnabled)
+
+# Individual: DUL:SM_Spoon_8_rigidCollisionEnabled (DUL:SM_Spoon_8_rigidCollisionEnabled)
+
+AnnotationAssertion(USD:physics_collisionEnabled DUL:SM_Spoon_8_rigidCollisionEnabled "true"^^xsd:boolean)
+ClassAssertion(DUL:Quality DUL:SM_Spoon_8_rigidCollisionEnabled)
+
+# Individual: DUL:SM_Spoon_9_rigidCollisionEnabled (DUL:SM_Spoon_9_rigidCollisionEnabled)
+
+AnnotationAssertion(USD:physics_collisionEnabled DUL:SM_Spoon_9_rigidCollisionEnabled "true"^^xsd:boolean)
+ClassAssertion(DUL:Quality DUL:SM_Spoon_9_rigidCollisionEnabled)
+
+# Individual: DUL:spoon_collision_0_centerOfMass (DUL:spoon_collision_0_centerOfMass)
+
+AnnotationAssertion(USD:physics_centerOfMass DUL:spoon_collision_0_centerOfMass "[0.0, 0.0, 0.0]"^^USD:point3f)
+ClassAssertion(DUL:Quality DUL:spoon_collision_0_centerOfMass)
+
+# Individual: DUL:spoon_collision_0_mass (DUL:spoon_collision_0_mass)
+
+AnnotationAssertion(USD:physics_mass DUL:spoon_collision_0_mass "2.8866105E-4"^^xsd:float)
+ClassAssertion(DUL:Quality DUL:spoon_collision_0_mass)
+
+# Individual: DUL:spoon_collision_0_xformOpOrder (DUL:spoon_collision_0_xformOpOrder)
+
+AnnotationAssertion(USD:xformOpOrder DUL:spoon_collision_0_xformOpOrder "[xformOp:transform]"^^USD:token_array)
+ClassAssertion(DUL:Quality DUL:spoon_collision_0_xformOpOrder)
+
+# Individual: DUL:spoon_collision_0_xformOp_transform (DUL:spoon_collision_0_xformOp_transform)
+
+AnnotationAssertion(USD:xformOp_transform DUL:spoon_collision_0_xformOp_transform "[[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]]"^^USD:matrix4d)
+ClassAssertion(DUL:Quality DUL:spoon_collision_0_xformOp_transform)
+
+# Individual: DUL:spoon_collision_10_centerOfMass (DUL:spoon_collision_10_centerOfMass)
+
+AnnotationAssertion(USD:physics_centerOfMass DUL:spoon_collision_10_centerOfMass "[0.0, 0.0, 0.0]"^^USD:point3f)
+ClassAssertion(DUL:Quality DUL:spoon_collision_10_centerOfMass)
+
+# Individual: DUL:spoon_collision_10_mass (DUL:spoon_collision_10_mass)
+
+AnnotationAssertion(USD:physics_mass DUL:spoon_collision_10_mass "4.2580774E-5"^^xsd:float)
+ClassAssertion(DUL:Quality DUL:spoon_collision_10_mass)
+
+# Individual: DUL:spoon_collision_10_xformOpOrder (DUL:spoon_collision_10_xformOpOrder)
+
+AnnotationAssertion(USD:xformOpOrder DUL:spoon_collision_10_xformOpOrder "[xformOp:transform]"^^USD:token_array)
+ClassAssertion(DUL:Quality DUL:spoon_collision_10_xformOpOrder)
+
+# Individual: DUL:spoon_collision_10_xformOp_transform (DUL:spoon_collision_10_xformOp_transform)
+
+AnnotationAssertion(USD:xformOp_transform DUL:spoon_collision_10_xformOp_transform "[[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]]"^^USD:matrix4d)
+ClassAssertion(DUL:Quality DUL:spoon_collision_10_xformOp_transform)
+
+# Individual: DUL:spoon_collision_11_centerOfMass (DUL:spoon_collision_11_centerOfMass)
+
+AnnotationAssertion(USD:physics_centerOfMass DUL:spoon_collision_11_centerOfMass "[0.0, 0.0, 0.0]"^^USD:point3f)
+ClassAssertion(DUL:Quality DUL:spoon_collision_11_centerOfMass)
+
+# Individual: DUL:spoon_collision_11_mass (DUL:spoon_collision_11_mass)
+
+AnnotationAssertion(USD:physics_mass DUL:spoon_collision_11_mass "1.0074189E-5"^^xsd:float)
+ClassAssertion(DUL:Quality DUL:spoon_collision_11_mass)
+
+# Individual: DUL:spoon_collision_11_xformOpOrder (DUL:spoon_collision_11_xformOpOrder)
+
+AnnotationAssertion(USD:xformOpOrder DUL:spoon_collision_11_xformOpOrder "[xformOp:transform]"^^USD:token_array)
+ClassAssertion(DUL:Quality DUL:spoon_collision_11_xformOpOrder)
+
+# Individual: DUL:spoon_collision_11_xformOp_transform (DUL:spoon_collision_11_xformOp_transform)
+
+AnnotationAssertion(USD:xformOp_transform DUL:spoon_collision_11_xformOp_transform "[[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]]"^^USD:matrix4d)
+ClassAssertion(DUL:Quality DUL:spoon_collision_11_xformOp_transform)
+
+# Individual: DUL:spoon_collision_12_centerOfMass (DUL:spoon_collision_12_centerOfMass)
+
+AnnotationAssertion(USD:physics_centerOfMass DUL:spoon_collision_12_centerOfMass "[0.0, 0.0, 0.0]"^^USD:point3f)
+ClassAssertion(DUL:Quality DUL:spoon_collision_12_centerOfMass)
+
+# Individual: DUL:spoon_collision_12_mass (DUL:spoon_collision_12_mass)
+
+AnnotationAssertion(USD:physics_mass DUL:spoon_collision_12_mass "2.6091462E-5"^^xsd:float)
+ClassAssertion(DUL:Quality DUL:spoon_collision_12_mass)
+
+# Individual: DUL:spoon_collision_12_xformOpOrder (DUL:spoon_collision_12_xformOpOrder)
+
+AnnotationAssertion(USD:xformOpOrder DUL:spoon_collision_12_xformOpOrder "[xformOp:transform]"^^USD:token_array)
+ClassAssertion(DUL:Quality DUL:spoon_collision_12_xformOpOrder)
+
+# Individual: DUL:spoon_collision_12_xformOp_transform (DUL:spoon_collision_12_xformOp_transform)
+
+AnnotationAssertion(USD:xformOp_transform DUL:spoon_collision_12_xformOp_transform "[[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]]"^^USD:matrix4d)
+ClassAssertion(DUL:Quality DUL:spoon_collision_12_xformOp_transform)
+
+# Individual: DUL:spoon_collision_13_centerOfMass (DUL:spoon_collision_13_centerOfMass)
+
+AnnotationAssertion(USD:physics_centerOfMass DUL:spoon_collision_13_centerOfMass "[0.0, 0.0, 0.0]"^^USD:point3f)
+ClassAssertion(DUL:Quality DUL:spoon_collision_13_centerOfMass)
+
+# Individual: DUL:spoon_collision_13_mass (DUL:spoon_collision_13_mass)
+
+AnnotationAssertion(USD:physics_mass DUL:spoon_collision_13_mass "2.6091471E-5"^^xsd:float)
+ClassAssertion(DUL:Quality DUL:spoon_collision_13_mass)
+
+# Individual: DUL:spoon_collision_13_xformOpOrder (DUL:spoon_collision_13_xformOpOrder)
+
+AnnotationAssertion(USD:xformOpOrder DUL:spoon_collision_13_xformOpOrder "[xformOp:transform]"^^USD:token_array)
+ClassAssertion(DUL:Quality DUL:spoon_collision_13_xformOpOrder)
+
+# Individual: DUL:spoon_collision_13_xformOp_transform (DUL:spoon_collision_13_xformOp_transform)
+
+AnnotationAssertion(USD:xformOp_transform DUL:spoon_collision_13_xformOp_transform "[[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]]"^^USD:matrix4d)
+ClassAssertion(DUL:Quality DUL:spoon_collision_13_xformOp_transform)
+
+# Individual: DUL:spoon_collision_14_centerOfMass (DUL:spoon_collision_14_centerOfMass)
+
+AnnotationAssertion(USD:physics_centerOfMass DUL:spoon_collision_14_centerOfMass "[0.0, 0.0, 0.0]"^^USD:point3f)
+ClassAssertion(DUL:Quality DUL:spoon_collision_14_centerOfMass)
+
+# Individual: DUL:spoon_collision_14_mass (DUL:spoon_collision_14_mass)
+
+AnnotationAssertion(USD:physics_mass DUL:spoon_collision_14_mass "7.1432146E-6"^^xsd:float)
+ClassAssertion(DUL:Quality DUL:spoon_collision_14_mass)
+
+# Individual: DUL:spoon_collision_14_xformOpOrder (DUL:spoon_collision_14_xformOpOrder)
+
+AnnotationAssertion(USD:xformOpOrder DUL:spoon_collision_14_xformOpOrder "[xformOp:transform]"^^USD:token_array)
+ClassAssertion(DUL:Quality DUL:spoon_collision_14_xformOpOrder)
+
+# Individual: DUL:spoon_collision_14_xformOp_transform (DUL:spoon_collision_14_xformOp_transform)
+
+AnnotationAssertion(USD:xformOp_transform DUL:spoon_collision_14_xformOp_transform "[[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]]"^^USD:matrix4d)
+ClassAssertion(DUL:Quality DUL:spoon_collision_14_xformOp_transform)
+
+# Individual: DUL:spoon_collision_15_centerOfMass (DUL:spoon_collision_15_centerOfMass)
+
+AnnotationAssertion(USD:physics_centerOfMass DUL:spoon_collision_15_centerOfMass "[0.0, 0.0, 0.0]"^^USD:point3f)
+ClassAssertion(DUL:Quality DUL:spoon_collision_15_centerOfMass)
+
+# Individual: DUL:spoon_collision_15_mass (DUL:spoon_collision_15_mass)
+
+AnnotationAssertion(USD:physics_mass DUL:spoon_collision_15_mass "6.549684E-6"^^xsd:float)
+ClassAssertion(DUL:Quality DUL:spoon_collision_15_mass)
+
+# Individual: DUL:spoon_collision_15_xformOpOrder (DUL:spoon_collision_15_xformOpOrder)
+
+AnnotationAssertion(USD:xformOpOrder DUL:spoon_collision_15_xformOpOrder "[xformOp:transform]"^^USD:token_array)
+ClassAssertion(DUL:Quality DUL:spoon_collision_15_xformOpOrder)
+
+# Individual: DUL:spoon_collision_15_xformOp_transform (DUL:spoon_collision_15_xformOp_transform)
+
+AnnotationAssertion(USD:xformOp_transform DUL:spoon_collision_15_xformOp_transform "[[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]]"^^USD:matrix4d)
+ClassAssertion(DUL:Quality DUL:spoon_collision_15_xformOp_transform)
+
+# Individual: DUL:spoon_collision_16_centerOfMass (DUL:spoon_collision_16_centerOfMass)
+
+AnnotationAssertion(USD:physics_centerOfMass DUL:spoon_collision_16_centerOfMass "[0.0, 0.0, 0.0]"^^USD:point3f)
+ClassAssertion(DUL:Quality DUL:spoon_collision_16_centerOfMass)
+
+# Individual: DUL:spoon_collision_16_mass (DUL:spoon_collision_16_mass)
+
+AnnotationAssertion(USD:physics_mass DUL:spoon_collision_16_mass "6.549684E-6"^^xsd:float)
+ClassAssertion(DUL:Quality DUL:spoon_collision_16_mass)
+
+# Individual: DUL:spoon_collision_16_xformOpOrder (DUL:spoon_collision_16_xformOpOrder)
+
+AnnotationAssertion(USD:xformOpOrder DUL:spoon_collision_16_xformOpOrder "[xformOp:transform]"^^USD:token_array)
+ClassAssertion(DUL:Quality DUL:spoon_collision_16_xformOpOrder)
+
+# Individual: DUL:spoon_collision_16_xformOp_transform (DUL:spoon_collision_16_xformOp_transform)
+
+AnnotationAssertion(USD:xformOp_transform DUL:spoon_collision_16_xformOp_transform "[[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]]"^^USD:matrix4d)
+ClassAssertion(DUL:Quality DUL:spoon_collision_16_xformOp_transform)
+
+# Individual: DUL:spoon_collision_1_centerOfMass (DUL:spoon_collision_1_centerOfMass)
+
+AnnotationAssertion(USD:physics_centerOfMass DUL:spoon_collision_1_centerOfMass "[0.0, 0.0, 0.0]"^^USD:point3f)
+ClassAssertion(DUL:Quality DUL:spoon_collision_1_centerOfMass)
+
+# Individual: DUL:spoon_collision_1_mass (DUL:spoon_collision_1_mass)
+
+AnnotationAssertion(USD:physics_mass DUL:spoon_collision_1_mass "7.555771E-6"^^xsd:float)
+ClassAssertion(DUL:Quality DUL:spoon_collision_1_mass)
+
+# Individual: DUL:spoon_collision_1_xformOpOrder (DUL:spoon_collision_1_xformOpOrder)
+
+AnnotationAssertion(USD:xformOpOrder DUL:spoon_collision_1_xformOpOrder "[xformOp:transform]"^^USD:token_array)
+ClassAssertion(DUL:Quality DUL:spoon_collision_1_xformOpOrder)
+
+# Individual: DUL:spoon_collision_1_xformOp_transform (DUL:spoon_collision_1_xformOp_transform)
+
+AnnotationAssertion(USD:xformOp_transform DUL:spoon_collision_1_xformOp_transform "[[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]]"^^USD:matrix4d)
+ClassAssertion(DUL:Quality DUL:spoon_collision_1_xformOp_transform)
+
+# Individual: DUL:spoon_collision_2_centerOfMass (DUL:spoon_collision_2_centerOfMass)
+
+AnnotationAssertion(USD:physics_centerOfMass DUL:spoon_collision_2_centerOfMass "[0.0, 0.0, 0.0]"^^USD:point3f)
+ClassAssertion(DUL:Quality DUL:spoon_collision_2_centerOfMass)
+
+# Individual: DUL:spoon_collision_2_mass (DUL:spoon_collision_2_mass)
+
+AnnotationAssertion(USD:physics_mass DUL:spoon_collision_2_mass "1.4726714E-5"^^xsd:float)
+ClassAssertion(DUL:Quality DUL:spoon_collision_2_mass)
+
+# Individual: DUL:spoon_collision_2_xformOpOrder (DUL:spoon_collision_2_xformOpOrder)
+
+AnnotationAssertion(USD:xformOpOrder DUL:spoon_collision_2_xformOpOrder "[xformOp:transform]"^^USD:token_array)
+ClassAssertion(DUL:Quality DUL:spoon_collision_2_xformOpOrder)
+
+# Individual: DUL:spoon_collision_2_xformOp_transform (DUL:spoon_collision_2_xformOp_transform)
+
+AnnotationAssertion(USD:xformOp_transform DUL:spoon_collision_2_xformOp_transform "[[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]]"^^USD:matrix4d)
+ClassAssertion(DUL:Quality DUL:spoon_collision_2_xformOp_transform)
+
+# Individual: DUL:spoon_collision_3_centerOfMass (DUL:spoon_collision_3_centerOfMass)
+
+AnnotationAssertion(USD:physics_centerOfMass DUL:spoon_collision_3_centerOfMass "[0.0, 0.0, 0.0]"^^USD:point3f)
+ClassAssertion(DUL:Quality DUL:spoon_collision_3_centerOfMass)
+
+# Individual: DUL:spoon_collision_3_mass (DUL:spoon_collision_3_mass)
+
+AnnotationAssertion(USD:physics_mass DUL:spoon_collision_3_mass "5.9602967E-6"^^xsd:float)
+ClassAssertion(DUL:Quality DUL:spoon_collision_3_mass)
+
+# Individual: DUL:spoon_collision_3_xformOpOrder (DUL:spoon_collision_3_xformOpOrder)
+
+AnnotationAssertion(USD:xformOpOrder DUL:spoon_collision_3_xformOpOrder "[xformOp:transform]"^^USD:token_array)
+ClassAssertion(DUL:Quality DUL:spoon_collision_3_xformOpOrder)
+
+# Individual: DUL:spoon_collision_3_xformOp_transform (DUL:spoon_collision_3_xformOp_transform)
+
+AnnotationAssertion(USD:xformOp_transform DUL:spoon_collision_3_xformOp_transform "[[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]]"^^USD:matrix4d)
+ClassAssertion(DUL:Quality DUL:spoon_collision_3_xformOp_transform)
+
+# Individual: DUL:spoon_collision_4_centerOfMass (DUL:spoon_collision_4_centerOfMass)
+
+AnnotationAssertion(USD:physics_centerOfMass DUL:spoon_collision_4_centerOfMass "[0.0, 0.0, 0.0]"^^USD:point3f)
+ClassAssertion(DUL:Quality DUL:spoon_collision_4_centerOfMass)
+
+# Individual: DUL:spoon_collision_4_mass (DUL:spoon_collision_4_mass)
+
+AnnotationAssertion(USD:physics_mass DUL:spoon_collision_4_mass "5.9602958E-6"^^xsd:float)
+ClassAssertion(DUL:Quality DUL:spoon_collision_4_mass)
+
+# Individual: DUL:spoon_collision_4_xformOpOrder (DUL:spoon_collision_4_xformOpOrder)
+
+AnnotationAssertion(USD:xformOpOrder DUL:spoon_collision_4_xformOpOrder "[xformOp:transform]"^^USD:token_array)
+ClassAssertion(DUL:Quality DUL:spoon_collision_4_xformOpOrder)
+
+# Individual: DUL:spoon_collision_4_xformOp_transform (DUL:spoon_collision_4_xformOp_transform)
+
+AnnotationAssertion(USD:xformOp_transform DUL:spoon_collision_4_xformOp_transform "[[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]]"^^USD:matrix4d)
+ClassAssertion(DUL:Quality DUL:spoon_collision_4_xformOp_transform)
+
+# Individual: DUL:spoon_collision_5_centerOfMass (DUL:spoon_collision_5_centerOfMass)
+
+AnnotationAssertion(USD:physics_centerOfMass DUL:spoon_collision_5_centerOfMass "[0.0, 0.0, 0.0]"^^USD:point3f)
+ClassAssertion(DUL:Quality DUL:spoon_collision_5_centerOfMass)
+
+# Individual: DUL:spoon_collision_5_mass (DUL:spoon_collision_5_mass)
+
+AnnotationAssertion(USD:physics_mass DUL:spoon_collision_5_mass "1.1251425E-5"^^xsd:float)
+ClassAssertion(DUL:Quality DUL:spoon_collision_5_mass)
+
+# Individual: DUL:spoon_collision_5_xformOpOrder (DUL:spoon_collision_5_xformOpOrder)
+
+AnnotationAssertion(USD:xformOpOrder DUL:spoon_collision_5_xformOpOrder "[xformOp:transform]"^^USD:token_array)
+ClassAssertion(DUL:Quality DUL:spoon_collision_5_xformOpOrder)
+
+# Individual: DUL:spoon_collision_5_xformOp_transform (DUL:spoon_collision_5_xformOp_transform)
+
+AnnotationAssertion(USD:xformOp_transform DUL:spoon_collision_5_xformOp_transform "[[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]]"^^USD:matrix4d)
+ClassAssertion(DUL:Quality DUL:spoon_collision_5_xformOp_transform)
+
+# Individual: DUL:spoon_collision_6_centerOfMass (DUL:spoon_collision_6_centerOfMass)
+
+AnnotationAssertion(USD:physics_centerOfMass DUL:spoon_collision_6_centerOfMass "[0.0, 0.0, 0.0]"^^USD:point3f)
+ClassAssertion(DUL:Quality DUL:spoon_collision_6_centerOfMass)
+
+# Individual: DUL:spoon_collision_6_mass (DUL:spoon_collision_6_mass)
+
+AnnotationAssertion(USD:physics_mass DUL:spoon_collision_6_mass "1.50725555E-5"^^xsd:float)
+ClassAssertion(DUL:Quality DUL:spoon_collision_6_mass)
+
+# Individual: DUL:spoon_collision_6_xformOpOrder (DUL:spoon_collision_6_xformOpOrder)
+
+AnnotationAssertion(USD:xformOpOrder DUL:spoon_collision_6_xformOpOrder "[xformOp:transform]"^^USD:token_array)
+ClassAssertion(DUL:Quality DUL:spoon_collision_6_xformOpOrder)
+
+# Individual: DUL:spoon_collision_6_xformOp_transform (DUL:spoon_collision_6_xformOp_transform)
+
+AnnotationAssertion(USD:xformOp_transform DUL:spoon_collision_6_xformOp_transform "[[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]]"^^USD:matrix4d)
+ClassAssertion(DUL:Quality DUL:spoon_collision_6_xformOp_transform)
+
+# Individual: DUL:spoon_collision_7_centerOfMass (DUL:spoon_collision_7_centerOfMass)
+
+AnnotationAssertion(USD:physics_centerOfMass DUL:spoon_collision_7_centerOfMass "[0.0, 0.0, 0.0]"^^USD:point3f)
+ClassAssertion(DUL:Quality DUL:spoon_collision_7_centerOfMass)
+
+# Individual: DUL:spoon_collision_7_mass (DUL:spoon_collision_7_mass)
+
+AnnotationAssertion(USD:physics_mass DUL:spoon_collision_7_mass "1.5072555E-5"^^xsd:float)
+ClassAssertion(DUL:Quality DUL:spoon_collision_7_mass)
+
+# Individual: DUL:spoon_collision_7_xformOpOrder (DUL:spoon_collision_7_xformOpOrder)
+
+AnnotationAssertion(USD:xformOpOrder DUL:spoon_collision_7_xformOpOrder "[xformOp:transform]"^^USD:token_array)
+ClassAssertion(DUL:Quality DUL:spoon_collision_7_xformOpOrder)
+
+# Individual: DUL:spoon_collision_7_xformOp_transform (DUL:spoon_collision_7_xformOp_transform)
+
+AnnotationAssertion(USD:xformOp_transform DUL:spoon_collision_7_xformOp_transform "[[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]]"^^USD:matrix4d)
+ClassAssertion(DUL:Quality DUL:spoon_collision_7_xformOp_transform)
+
+# Individual: DUL:spoon_collision_8_centerOfMass (DUL:spoon_collision_8_centerOfMass)
+
+AnnotationAssertion(USD:physics_centerOfMass DUL:spoon_collision_8_centerOfMass "[0.0, 0.0, 0.0]"^^USD:point3f)
+ClassAssertion(DUL:Quality DUL:spoon_collision_8_centerOfMass)
+
+# Individual: DUL:spoon_collision_8_mass (DUL:spoon_collision_8_mass)
+
+AnnotationAssertion(USD:physics_mass DUL:spoon_collision_8_mass "3.3657445E-5"^^xsd:float)
+ClassAssertion(DUL:Quality DUL:spoon_collision_8_mass)
+
+# Individual: DUL:spoon_collision_8_xformOpOrder (DUL:spoon_collision_8_xformOpOrder)
+
+AnnotationAssertion(USD:xformOpOrder DUL:spoon_collision_8_xformOpOrder "[xformOp:transform]"^^USD:token_array)
+ClassAssertion(DUL:Quality DUL:spoon_collision_8_xformOpOrder)
+
+# Individual: DUL:spoon_collision_8_xformOp_transform (DUL:spoon_collision_8_xformOp_transform)
+
+AnnotationAssertion(USD:xformOp_transform DUL:spoon_collision_8_xformOp_transform "[[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]]"^^USD:matrix4d)
+ClassAssertion(DUL:Quality DUL:spoon_collision_8_xformOp_transform)
+
+# Individual: DUL:spoon_collision_9_centerOfMass (DUL:spoon_collision_9_centerOfMass)
+
+AnnotationAssertion(USD:physics_centerOfMass DUL:spoon_collision_9_centerOfMass "[0.0, 0.0, 0.0]"^^USD:point3f)
+ClassAssertion(DUL:Quality DUL:spoon_collision_9_centerOfMass)
+
+# Individual: DUL:spoon_collision_9_mass (DUL:spoon_collision_9_mass)
+
+AnnotationAssertion(USD:physics_mass DUL:spoon_collision_9_mass "4.2580756E-5"^^xsd:float)
+ClassAssertion(DUL:Quality DUL:spoon_collision_9_mass)
+
+# Individual: DUL:spoon_collision_9_xformOpOrder (DUL:spoon_collision_9_xformOpOrder)
+
+AnnotationAssertion(USD:xformOpOrder DUL:spoon_collision_9_xformOpOrder "[xformOp:transform]"^^USD:token_array)
+ClassAssertion(DUL:Quality DUL:spoon_collision_9_xformOpOrder)
+
+# Individual: DUL:spoon_collision_9_xformOp_transform (DUL:spoon_collision_9_xformOp_transform)
+
+AnnotationAssertion(USD:xformOp_transform DUL:spoon_collision_9_xformOp_transform "[[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]]"^^USD:matrix4d)
+ClassAssertion(DUL:Quality DUL:spoon_collision_9_xformOp_transform)
+
+# Individual: DUL:spoon_visual_0_xformOpOrder (DUL:spoon_visual_0_xformOpOrder)
+
+AnnotationAssertion(USD:xformOpOrder DUL:spoon_visual_0_xformOpOrder "[xformOp:transform]"^^USD:token_array)
+ClassAssertion(DUL:Quality DUL:spoon_visual_0_xformOpOrder)
+
+# Individual: DUL:spoon_visual_0_xformOp_transform (DUL:spoon_visual_0_xformOp_transform)
+
+AnnotationAssertion(USD:xformOp_transform DUL:spoon_visual_0_xformOp_transform "[[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]]"^^USD:matrix4d)
+ClassAssertion(DUL:Quality DUL:spoon_visual_0_xformOp_transform)
+
+# Individual: DUL:spoon_xformOpOrder (DUL:spoon_xformOpOrder)
+
+AnnotationAssertion(USD:xformOpOrder DUL:spoon_xformOpOrder "[xformOp:transform]"^^USD:token_array)
+ClassAssertion(DUL:Quality DUL:spoon_xformOpOrder)
+
+# Individual: DUL:spoon_xformOp_transform (DUL:spoon_xformOp_transform)
+
+AnnotationAssertion(USD:xformOp_transform DUL:spoon_xformOp_transform "[[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]]"^^USD:matrix4d)
+ClassAssertion(DUL:Quality DUL:spoon_xformOp_transform)
+
+# Individual: USD:spoon (USD:spoon)
+
+ClassAssertion(<http://www.ease-crc.org/ont/SOMA.owl#Spoon> USD:spoon)
+ClassAssertion(USD:Prim USD:spoon)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasTypedSchema USD:XformSchema) USD:spoon)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon USD:spoon_collision_0)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon USD:spoon_collision_1)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon USD:spoon_collision_10)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon USD:spoon_collision_11)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon USD:spoon_collision_12)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon USD:spoon_collision_13)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon USD:spoon_collision_14)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon USD:spoon_collision_15)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon USD:spoon_collision_16)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon USD:spoon_collision_2)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon USD:spoon_collision_3)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon USD:spoon_collision_4)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon USD:spoon_collision_5)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon USD:spoon_collision_6)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon USD:spoon_collision_7)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon USD:spoon_collision_8)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon USD:spoon_collision_9)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon USD:spoon_visual_0)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon DUL:spoon_xformOpOrder)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon DUL:spoon_xformOp_transform)
+
+# Individual: USD:spoon_collision_0 (USD:spoon_collision_0)
+
+ClassAssertion(USD:Prim USD:spoon_collision_0)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:MassAPI) USD:spoon_collision_0)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasTypedSchema USD:XformSchema) USD:spoon_collision_0)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon_collision_0 USD:spoon_collision_0_SM_Spoon_1)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_0 DUL:spoon_collision_0_centerOfMass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_0 DUL:spoon_collision_0_mass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_0 DUL:spoon_collision_0_xformOpOrder)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_0 DUL:spoon_collision_0_xformOp_transform)
+
+# Individual: USD:spoon_collision_0_SM_Spoon_1 (USD:spoon_collision_0_SM_Spoon_1)
+
+ClassAssertion(USD:Prim USD:spoon_collision_0_SM_Spoon_1)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:CollisionAPI) USD:spoon_collision_0_SM_Spoon_1)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_0_SM_Spoon_1 DUL:SM_Spoon_1_rigidCollisionEnabled)
+
+# Individual: USD:spoon_collision_1 (USD:spoon_collision_1)
+
+ClassAssertion(USD:Prim USD:spoon_collision_1)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:MassAPI) USD:spoon_collision_1)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasTypedSchema USD:XformSchema) USD:spoon_collision_1)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon_collision_1 USD:spoon_collision_1_SM_Spoon_2)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_1 DUL:spoon_collision_1_centerOfMass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_1 DUL:spoon_collision_1_mass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_1 DUL:spoon_collision_1_xformOpOrder)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_1 DUL:spoon_collision_1_xformOp_transform)
+
+# Individual: USD:spoon_collision_10 (USD:spoon_collision_10)
+
+ClassAssertion(USD:Prim USD:spoon_collision_10)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:MassAPI) USD:spoon_collision_10)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasTypedSchema USD:XformSchema) USD:spoon_collision_10)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon_collision_10 USD:spoon_collision_10_SM_Spoon_11)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_10 DUL:spoon_collision_10_centerOfMass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_10 DUL:spoon_collision_10_mass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_10 DUL:spoon_collision_10_xformOpOrder)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_10 DUL:spoon_collision_10_xformOp_transform)
+
+# Individual: USD:spoon_collision_10_SM_Spoon_11 (USD:spoon_collision_10_SM_Spoon_11)
+
+ClassAssertion(USD:Prim USD:spoon_collision_10_SM_Spoon_11)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:CollisionAPI) USD:spoon_collision_10_SM_Spoon_11)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_10_SM_Spoon_11 DUL:SM_Spoon_11_rigidCollisionEnabled)
+
+# Individual: USD:spoon_collision_11 (USD:spoon_collision_11)
+
+ClassAssertion(USD:Prim USD:spoon_collision_11)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:MassAPI) USD:spoon_collision_11)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasTypedSchema USD:XformSchema) USD:spoon_collision_11)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon_collision_11 USD:spoon_collision_11_SM_Spoon_12)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_11 DUL:spoon_collision_11_centerOfMass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_11 DUL:spoon_collision_11_mass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_11 DUL:spoon_collision_11_xformOpOrder)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_11 DUL:spoon_collision_11_xformOp_transform)
+
+# Individual: USD:spoon_collision_11_SM_Spoon_12 (USD:spoon_collision_11_SM_Spoon_12)
+
+ClassAssertion(USD:Prim USD:spoon_collision_11_SM_Spoon_12)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:CollisionAPI) USD:spoon_collision_11_SM_Spoon_12)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_11_SM_Spoon_12 DUL:SM_Spoon_12_rigidCollisionEnabled)
+
+# Individual: USD:spoon_collision_12 (USD:spoon_collision_12)
+
+ClassAssertion(USD:Prim USD:spoon_collision_12)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:MassAPI) USD:spoon_collision_12)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasTypedSchema USD:XformSchema) USD:spoon_collision_12)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon_collision_12 USD:spoon_collision_12_SM_Spoon_13)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_12 DUL:spoon_collision_12_centerOfMass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_12 DUL:spoon_collision_12_mass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_12 DUL:spoon_collision_12_xformOpOrder)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_12 DUL:spoon_collision_12_xformOp_transform)
+
+# Individual: USD:spoon_collision_12_SM_Spoon_13 (USD:spoon_collision_12_SM_Spoon_13)
+
+ClassAssertion(USD:Prim USD:spoon_collision_12_SM_Spoon_13)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:CollisionAPI) USD:spoon_collision_12_SM_Spoon_13)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_12_SM_Spoon_13 DUL:SM_Spoon_13_rigidCollisionEnabled)
+
+# Individual: USD:spoon_collision_13 (USD:spoon_collision_13)
+
+ClassAssertion(USD:Prim USD:spoon_collision_13)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:MassAPI) USD:spoon_collision_13)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasTypedSchema USD:XformSchema) USD:spoon_collision_13)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon_collision_13 USD:spoon_collision_13_SM_Spoon_14)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_13 DUL:spoon_collision_13_centerOfMass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_13 DUL:spoon_collision_13_mass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_13 DUL:spoon_collision_13_xformOpOrder)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_13 DUL:spoon_collision_13_xformOp_transform)
+
+# Individual: USD:spoon_collision_13_SM_Spoon_14 (USD:spoon_collision_13_SM_Spoon_14)
+
+ClassAssertion(USD:Prim USD:spoon_collision_13_SM_Spoon_14)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:CollisionAPI) USD:spoon_collision_13_SM_Spoon_14)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_13_SM_Spoon_14 DUL:SM_Spoon_14_rigidCollisionEnabled)
+
+# Individual: USD:spoon_collision_14 (USD:spoon_collision_14)
+
+ClassAssertion(USD:Prim USD:spoon_collision_14)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:MassAPI) USD:spoon_collision_14)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasTypedSchema USD:XformSchema) USD:spoon_collision_14)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon_collision_14 USD:spoon_collision_14_SM_Spoon_15)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_14 DUL:spoon_collision_14_centerOfMass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_14 DUL:spoon_collision_14_mass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_14 DUL:spoon_collision_14_xformOpOrder)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_14 DUL:spoon_collision_14_xformOp_transform)
+
+# Individual: USD:spoon_collision_14_SM_Spoon_15 (USD:spoon_collision_14_SM_Spoon_15)
+
+ClassAssertion(USD:Prim USD:spoon_collision_14_SM_Spoon_15)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:CollisionAPI) USD:spoon_collision_14_SM_Spoon_15)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_14_SM_Spoon_15 DUL:SM_Spoon_15_rigidCollisionEnabled)
+
+# Individual: USD:spoon_collision_15 (USD:spoon_collision_15)
+
+ClassAssertion(USD:Prim USD:spoon_collision_15)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:MassAPI) USD:spoon_collision_15)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasTypedSchema USD:XformSchema) USD:spoon_collision_15)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon_collision_15 USD:spoon_collision_15_SM_Spoon_16)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_15 DUL:spoon_collision_15_centerOfMass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_15 DUL:spoon_collision_15_mass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_15 DUL:spoon_collision_15_xformOpOrder)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_15 DUL:spoon_collision_15_xformOp_transform)
+
+# Individual: USD:spoon_collision_15_SM_Spoon_16 (USD:spoon_collision_15_SM_Spoon_16)
+
+ClassAssertion(USD:Prim USD:spoon_collision_15_SM_Spoon_16)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:CollisionAPI) USD:spoon_collision_15_SM_Spoon_16)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_15_SM_Spoon_16 DUL:SM_Spoon_16_rigidCollisionEnabled)
+
+# Individual: USD:spoon_collision_16 (USD:spoon_collision_16)
+
+ClassAssertion(USD:Prim USD:spoon_collision_16)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:MassAPI) USD:spoon_collision_16)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasTypedSchema USD:XformSchema) USD:spoon_collision_16)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon_collision_16 USD:spoon_collision_16_SM_Spoon_17)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_16 DUL:spoon_collision_16_centerOfMass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_16 DUL:spoon_collision_16_mass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_16 DUL:spoon_collision_16_xformOpOrder)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_16 DUL:spoon_collision_16_xformOp_transform)
+
+# Individual: USD:spoon_collision_16_SM_Spoon_17 (USD:spoon_collision_16_SM_Spoon_17)
+
+ClassAssertion(USD:Prim USD:spoon_collision_16_SM_Spoon_17)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:CollisionAPI) USD:spoon_collision_16_SM_Spoon_17)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_16_SM_Spoon_17 DUL:SM_Spoon_17_rigidCollisionEnabled)
+
+# Individual: USD:spoon_collision_1_SM_Spoon_2 (USD:spoon_collision_1_SM_Spoon_2)
+
+ClassAssertion(USD:Prim USD:spoon_collision_1_SM_Spoon_2)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:CollisionAPI) USD:spoon_collision_1_SM_Spoon_2)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_1_SM_Spoon_2 DUL:SM_Spoon_2_rigidCollisionEnabled)
+
+# Individual: USD:spoon_collision_2 (USD:spoon_collision_2)
+
+ClassAssertion(USD:Prim USD:spoon_collision_2)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:MassAPI) USD:spoon_collision_2)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasTypedSchema USD:XformSchema) USD:spoon_collision_2)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon_collision_2 USD:spoon_collision_2_SM_Spoon_3)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_2 DUL:spoon_collision_2_centerOfMass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_2 DUL:spoon_collision_2_mass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_2 DUL:spoon_collision_2_xformOpOrder)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_2 DUL:spoon_collision_2_xformOp_transform)
+
+# Individual: USD:spoon_collision_2_SM_Spoon_3 (USD:spoon_collision_2_SM_Spoon_3)
+
+ClassAssertion(USD:Prim USD:spoon_collision_2_SM_Spoon_3)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:CollisionAPI) USD:spoon_collision_2_SM_Spoon_3)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_2_SM_Spoon_3 DUL:SM_Spoon_3_rigidCollisionEnabled)
+
+# Individual: USD:spoon_collision_3 (USD:spoon_collision_3)
+
+ClassAssertion(USD:Prim USD:spoon_collision_3)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:MassAPI) USD:spoon_collision_3)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasTypedSchema USD:XformSchema) USD:spoon_collision_3)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon_collision_3 USD:spoon_collision_3_SM_Spoon_4)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_3 DUL:spoon_collision_3_centerOfMass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_3 DUL:spoon_collision_3_mass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_3 DUL:spoon_collision_3_xformOpOrder)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_3 DUL:spoon_collision_3_xformOp_transform)
+
+# Individual: USD:spoon_collision_3_SM_Spoon_4 (USD:spoon_collision_3_SM_Spoon_4)
+
+ClassAssertion(USD:Prim USD:spoon_collision_3_SM_Spoon_4)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:CollisionAPI) USD:spoon_collision_3_SM_Spoon_4)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_3_SM_Spoon_4 DUL:SM_Spoon_4_rigidCollisionEnabled)
+
+# Individual: USD:spoon_collision_4 (USD:spoon_collision_4)
+
+ClassAssertion(USD:Prim USD:spoon_collision_4)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:MassAPI) USD:spoon_collision_4)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasTypedSchema USD:XformSchema) USD:spoon_collision_4)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon_collision_4 USD:spoon_collision_4_SM_Spoon_5)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_4 DUL:spoon_collision_4_centerOfMass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_4 DUL:spoon_collision_4_mass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_4 DUL:spoon_collision_4_xformOpOrder)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_4 DUL:spoon_collision_4_xformOp_transform)
+
+# Individual: USD:spoon_collision_4_SM_Spoon_5 (USD:spoon_collision_4_SM_Spoon_5)
+
+ClassAssertion(USD:Prim USD:spoon_collision_4_SM_Spoon_5)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:CollisionAPI) USD:spoon_collision_4_SM_Spoon_5)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_4_SM_Spoon_5 DUL:SM_Spoon_5_rigidCollisionEnabled)
+
+# Individual: USD:spoon_collision_5 (USD:spoon_collision_5)
+
+ClassAssertion(USD:Prim USD:spoon_collision_5)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:MassAPI) USD:spoon_collision_5)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasTypedSchema USD:XformSchema) USD:spoon_collision_5)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon_collision_5 USD:spoon_collision_5_SM_Spoon_6)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_5 DUL:spoon_collision_5_centerOfMass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_5 DUL:spoon_collision_5_mass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_5 DUL:spoon_collision_5_xformOpOrder)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_5 DUL:spoon_collision_5_xformOp_transform)
+
+# Individual: USD:spoon_collision_5_SM_Spoon_6 (USD:spoon_collision_5_SM_Spoon_6)
+
+ClassAssertion(USD:Prim USD:spoon_collision_5_SM_Spoon_6)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:CollisionAPI) USD:spoon_collision_5_SM_Spoon_6)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_5_SM_Spoon_6 DUL:SM_Spoon_6_rigidCollisionEnabled)
+
+# Individual: USD:spoon_collision_6 (USD:spoon_collision_6)
+
+ClassAssertion(USD:Prim USD:spoon_collision_6)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:MassAPI) USD:spoon_collision_6)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasTypedSchema USD:XformSchema) USD:spoon_collision_6)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon_collision_6 USD:spoon_collision_6_SM_Spoon_7)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_6 DUL:spoon_collision_6_centerOfMass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_6 DUL:spoon_collision_6_mass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_6 DUL:spoon_collision_6_xformOpOrder)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_6 DUL:spoon_collision_6_xformOp_transform)
+
+# Individual: USD:spoon_collision_6_SM_Spoon_7 (USD:spoon_collision_6_SM_Spoon_7)
+
+ClassAssertion(USD:Prim USD:spoon_collision_6_SM_Spoon_7)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:CollisionAPI) USD:spoon_collision_6_SM_Spoon_7)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_6_SM_Spoon_7 DUL:SM_Spoon_7_rigidCollisionEnabled)
+
+# Individual: USD:spoon_collision_7 (USD:spoon_collision_7)
+
+ClassAssertion(USD:Prim USD:spoon_collision_7)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:MassAPI) USD:spoon_collision_7)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasTypedSchema USD:XformSchema) USD:spoon_collision_7)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon_collision_7 USD:spoon_collision_7_SM_Spoon_8)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_7 DUL:spoon_collision_7_centerOfMass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_7 DUL:spoon_collision_7_mass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_7 DUL:spoon_collision_7_xformOpOrder)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_7 DUL:spoon_collision_7_xformOp_transform)
+
+# Individual: USD:spoon_collision_7_SM_Spoon_8 (USD:spoon_collision_7_SM_Spoon_8)
+
+ClassAssertion(USD:Prim USD:spoon_collision_7_SM_Spoon_8)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:CollisionAPI) USD:spoon_collision_7_SM_Spoon_8)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_7_SM_Spoon_8 DUL:SM_Spoon_8_rigidCollisionEnabled)
+
+# Individual: USD:spoon_collision_8 (USD:spoon_collision_8)
+
+ClassAssertion(USD:Prim USD:spoon_collision_8)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:MassAPI) USD:spoon_collision_8)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasTypedSchema USD:XformSchema) USD:spoon_collision_8)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon_collision_8 USD:spoon_collision_8_SM_Spoon_9)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_8 DUL:spoon_collision_8_centerOfMass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_8 DUL:spoon_collision_8_mass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_8 DUL:spoon_collision_8_xformOpOrder)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_8 DUL:spoon_collision_8_xformOp_transform)
+
+# Individual: USD:spoon_collision_8_SM_Spoon_9 (USD:spoon_collision_8_SM_Spoon_9)
+
+ClassAssertion(USD:Prim USD:spoon_collision_8_SM_Spoon_9)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:CollisionAPI) USD:spoon_collision_8_SM_Spoon_9)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_8_SM_Spoon_9 DUL:SM_Spoon_9_rigidCollisionEnabled)
+
+# Individual: USD:spoon_collision_9 (USD:spoon_collision_9)
+
+ClassAssertion(USD:Prim USD:spoon_collision_9)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:MassAPI) USD:spoon_collision_9)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasTypedSchema USD:XformSchema) USD:spoon_collision_9)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon_collision_9 USD:spoon_collision_9_SM_Spoon_10)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_9 DUL:spoon_collision_9_centerOfMass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_9 DUL:spoon_collision_9_mass)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_9 DUL:spoon_collision_9_xformOpOrder)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_9 DUL:spoon_collision_9_xformOp_transform)
+
+# Individual: USD:spoon_collision_9_SM_Spoon_10 (USD:spoon_collision_9_SM_Spoon_10)
+
+ClassAssertion(USD:Prim USD:spoon_collision_9_SM_Spoon_10)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasAPI USD:CollisionAPI) USD:spoon_collision_9_SM_Spoon_10)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_collision_9_SM_Spoon_10 DUL:SM_Spoon_10_rigidCollisionEnabled)
+
+# Individual: USD:spoon_visual_0 (USD:spoon_visual_0)
+
+ClassAssertion(USD:Prim USD:spoon_visual_0)
+ClassAssertion(ObjectSomeValuesFrom(USD:hasTypedSchema USD:XformSchema) USD:spoon_visual_0)
+ObjectPropertyAssertion(DUL:hasPart USD:spoon_visual_0 USD:spoon_visual_0_SM_Spoon)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_visual_0 DUL:spoon_visual_0_xformOpOrder)
+ObjectPropertyAssertion(DUL:hasQuality USD:spoon_visual_0 DUL:spoon_visual_0_xformOp_transform)
+
+# Individual: USD:spoon_visual_0_SM_Spoon (USD:spoon_visual_0_SM_Spoon)
+
+ClassAssertion(USD:Prim USD:spoon_visual_0_SM_Spoon)
+
+
+)

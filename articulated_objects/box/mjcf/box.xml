@@ -5,21 +5,29 @@
         <mesh name="BoxFlapSide1" file="BoxFlapSide1.stl" />
         <mesh name="BoxFlapSide2" file="BoxFlapSide2.stl" />
     </asset>
+    <default>
+		<default class="visual">
+			<geom contype="0" conaffinity="0" />
+		</default>
+		<default class="collision">
+			<geom rgba="1.0 0.0 0.0 0.5" />
+		</default>
+	</default>
     <worldbody>
         <body name="box">
-            <geom size="0.17 0.16 0.0025" pos="0 0 -0.1675" type="box" rgba="1 0.8 0 1" />
-            <geom size="0.002578 0.16 0.1675" pos="0.167578 0 -0.0025" type="box" rgba="1 0.8 0 1" />
-            <geom size="0.002578 0.16 0.1675" pos="-0.167578 0 -0.0025" type="box" rgba="1 0.8 0 1" />
-            <geom size="0.170156 0.0025 0.1675" pos="0 0.1575 -0.0025" type="box" rgba="1 0.8 0 1" />
-            <geom size="0.170156 0.0025 0.1675" pos="0 -0.1575 -0.0025" type="box" rgba="1 0.8 0 1" />
-            <!-- <body name="box_flap_side_1" pos="0.17 0 0.166" gravcomp="0">
+            <geom size="0.17 0.16 0.0025" pos="0 0 -0.1675" type="box" rgba="1 0.8 0 1" class="collision"/>
+            <geom size="0.002578 0.16 0.1675" pos="0.167578 0 -0.0025" type="box" rgba="1 0.8 0 1" class="collision"/>
+            <geom size="0.002578 0.16 0.1675" pos="-0.167578 0 -0.0025" type="box" rgba="1 0.8 0 1" class="collision"/>
+            <geom size="0.170156 0.0025 0.1675" pos="0 0.1575 -0.0025" type="box" rgba="1 0.8 0 1" class="collision"/>
+            <geom size="0.170156 0.0025 0.1675" pos="0 -0.1575 -0.0025" type="box" rgba="1 0.8 0 1" class="collision"/>
+            <body name="box_flap_side_1" pos="0.17 0 0.166" gravcomp="0">
                 <joint name="box_flap_side_1_joint" axis="0 1 0" springref="1.57" stiffness="0.235" damping="0.01" />
-                <geom type="mesh" mesh="BoxFlapSide1" rgba="1 0.8 0 1" />
+                <geom type="mesh" mesh="BoxFlapSide1" rgba="1 0.8 0 1" class="collision"/>
             </body>
             <body name="box_flap_side_2" pos="-0.17 0 0.168" gravcomp="0">
                 <joint name="box_flap_side_2_joint" axis="0 -1 0" stiffness="0.001" damping="0.01" />
-                <geom type="mesh" mesh="BoxFlapSide2" rgba="1 0.8 0 1" />
-            </body> -->
+                <geom type="mesh" mesh="BoxFlapSide2" rgba="1 0.8 0 1" class="collision"/>
+            </body>
         </body>
     </worldbody>
     <equality />
