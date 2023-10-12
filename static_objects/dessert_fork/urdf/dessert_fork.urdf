@@ -1,0 +1,102 @@
+<?xml version="1.0" ?>
+<robot name="world" version="1.0">
+  <link name="world">
+  </link>
+  <joint name="dessert_fork_joint" type="fixed">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <parent link="world"/>
+    <child link="dessert_fork"/>
+  </joint>
+  <link name="dessert_fork">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.009999999776482582"/>
+      <inertia ixx="0.0007999999797903001" ixy="0.0" ixz="0.0" iyy="0.0007999999797903001" iyz="0.0" izz="0.0001500000071246177"/>
+    </inertial>
+    <visual name="dessert_fork_visual">
+      <geometry>
+        <mesh filename="package://static_objects/dessert_fork/meshes/dae/DessertFork.dae"/>
+      </geometry>
+    </visual>
+    <collision name="dessert_fork_collision_01">
+      <geometry>
+        <mesh filename="package://static_objects/dessert_fork/meshes/stl/UCX_DessertFork_01.stl"/>
+      </geometry>
+    </collision>
+    <collision name="dessert_fork_collision_02">
+      <geometry>
+        <mesh filename="package://static_objects/dessert_fork/meshes/stl/UCX_DessertFork_02.stl"/>
+      </geometry>
+    </collision>
+    <collision name="dessert_fork_collision_03">
+      <geometry>
+        <mesh filename="package://static_objects/dessert_fork/meshes/stl/UCX_DessertFork_03.stl"/>
+      </geometry>
+    </collision>
+    <collision name="dessert_fork_collision_04">
+      <geometry>
+        <mesh filename="package://static_objects/dessert_fork/meshes/stl/UCX_DessertFork_04.stl"/>
+      </geometry>
+    </collision>
+    <collision name="dessert_fork_collision_05">
+      <geometry>
+        <mesh filename="package://static_objects/dessert_fork/meshes/stl/UCX_DessertFork_05.stl"/>
+      </geometry>
+    </collision>
+    <collision name="dessert_fork_collision_06">
+      <geometry>
+        <mesh filename="package://static_objects/dessert_fork/meshes/stl/UCX_DessertFork_06.stl"/>
+      </geometry>
+    </collision>
+    <collision name="dessert_fork_collision_07">
+      <geometry>
+        <mesh filename="package://static_objects/dessert_fork/meshes/stl/UCX_DessertFork_07.stl"/>
+      </geometry>
+    </collision>
+    <collision name="dessert_fork_collision_08">
+      <geometry>
+        <mesh filename="package://static_objects/dessert_fork/meshes/stl/UCX_DessertFork_08.stl"/>
+      </geometry>
+    </collision>
+    <collision name="dessert_fork_collision_09">
+      <geometry>
+        <mesh filename="package://static_objects/dessert_fork/meshes/stl/UCX_DessertFork_09.stl"/>
+      </geometry>
+    </collision>
+    <collision name="dessert_fork_collision_10">
+      <geometry>
+        <mesh filename="package://static_objects/dessert_fork/meshes/stl/UCX_DessertFork_10.stl"/>
+      </geometry>
+    </collision>
+    <collision name="dessert_fork_collision_11">
+      <geometry>
+        <mesh filename="package://static_objects/dessert_fork/meshes/stl/UCX_DessertFork_11.stl"/>
+      </geometry>
+    </collision>
+    <collision name="dessert_fork_collision_12">
+      <geometry>
+        <mesh filename="package://static_objects/dessert_fork/meshes/stl/UCX_DessertFork_12.stl"/>
+      </geometry>
+    </collision>
+    <collision name="dessert_fork_collision_13">
+      <geometry>
+        <mesh filename="package://static_objects/dessert_fork/meshes/stl/UCX_DessertFork_13.stl"/>
+      </geometry>
+    </collision>
+    <collision name="dessert_fork_collision_14">
+      <geometry>
+        <mesh filename="package://static_objects/dessert_fork/meshes/stl/UCX_DessertFork_14.stl"/>
+      </geometry>
+    </collision>
+    <collision name="dessert_fork_collision_15">
+      <geometry>
+        <mesh filename="package://static_objects/dessert_fork/meshes/stl/UCX_DessertFork_15.stl"/>
+      </geometry>
+    </collision>
+    <collision name="dessert_fork_collision_16">
+      <geometry>
+        <mesh filename="package://static_objects/dessert_fork/meshes/stl/UCX_DessertFork_16.stl"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>

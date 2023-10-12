@@ -1,0 +1,56 @@
+<mujoco model="dessert_fork">
+    <compiler angle="radian" meshdir="../meshes/" texturedir="../meshes/textures/"
+        autolimits="true" />
+    <asset>
+        <mesh name="dessert_fork_visual" file="obj/DessertFork.obj" />
+        <mesh name="dessert_fork_collision_01" file="stl/UCX_DessertFork_01.stl" />
+        <mesh name="dessert_fork_collision_02" file="stl/UCX_DessertFork_02.stl" />
+        <mesh name="dessert_fork_collision_03" file="stl/UCX_DessertFork_03.stl" />
+        <mesh name="dessert_fork_collision_04" file="stl/UCX_DessertFork_04.stl" />
+        <mesh name="dessert_fork_collision_05" file="stl/UCX_DessertFork_05.stl" />
+        <mesh name="dessert_fork_collision_06" file="stl/UCX_DessertFork_06.stl" />
+        <mesh name="dessert_fork_collision_07" file="stl/UCX_DessertFork_07.stl" />
+        <mesh name="dessert_fork_collision_08" file="stl/UCX_DessertFork_08.stl" />
+        <mesh name="dessert_fork_collision_09" file="stl/UCX_DessertFork_09.stl" />
+        <mesh name="dessert_fork_collision_10" file="stl/UCX_DessertFork_10.stl" />
+        <mesh name="dessert_fork_collision_11" file="stl/UCX_DessertFork_11.stl" />
+        <mesh name="dessert_fork_collision_12" file="stl/UCX_DessertFork_12.stl" />
+        <mesh name="dessert_fork_collision_13" file="stl/UCX_DessertFork_13.stl" />
+        <mesh name="dessert_fork_collision_14" file="stl/UCX_DessertFork_14.stl" />
+        <mesh name="dessert_fork_collision_15" file="stl/UCX_DessertFork_15.stl" />
+        <mesh name="dessert_fork_collision_16" file="stl/UCX_DessertFork_16.stl" />
+    </asset>
+    <default>
+		<default class="visual">
+			<geom contype="0" conaffinity="0" />
+		</default>
+		<default class="collision">
+			<geom rgba="1.0 0.0 0.0 0.5" />
+		</default>
+	</default>
+    <worldbody>
+        <body name="dessert_fork">
+            <freejoint />
+            <inertial pos="0.0 0.0 0.0" mass="0.01" diaginertia="0.0008 0.0008 0.00015" />
+            <geom name="dessert_fork_visual" type="mesh" mesh="dessert_fork_visual" class="visual" />
+            <geom name="dessert_fork_collision_01" type="mesh" mesh="dessert_fork_collision_01" class="collision" />
+            <geom name="dessert_fork_collision_02" type="mesh" mesh="dessert_fork_collision_02" class="collision" />
+            <geom name="dessert_fork_collision_03" type="mesh" mesh="dessert_fork_collision_03" class="collision" />
+            <geom name="dessert_fork_collision_04" type="mesh" mesh="dessert_fork_collision_04" class="collision" />
+            <geom name="dessert_fork_collision_05" type="mesh" mesh="dessert_fork_collision_05" class="collision" />
+            <geom name="dessert_fork_collision_06" type="mesh" mesh="dessert_fork_collision_06" class="collision" />
+            <geom name="dessert_fork_collision_07" type="mesh" mesh="dessert_fork_collision_07" class="collision" />
+            <geom name="dessert_fork_collision_08" type="mesh" mesh="dessert_fork_collision_08" class="collision" />
+            <geom name="dessert_fork_collision_09" type="mesh" mesh="dessert_fork_collision_09" class="collision" />
+            <geom name="dessert_fork_collision_10" type="mesh" mesh="dessert_fork_collision_10" class="collision" />
+            <geom name="dessert_fork_collision_11" type="mesh" mesh="dessert_fork_collision_11" class="collision" />
+            <geom name="dessert_fork_collision_12" type="mesh" mesh="dessert_fork_collision_12" class="collision" />
+            <geom name="dessert_fork_collision_13" type="mesh" mesh="dessert_fork_collision_13" class="collision" />
+            <geom name="dessert_fork_collision_14" type="mesh" mesh="dessert_fork_collision_14" class="collision" />
+            <geom name="dessert_fork_collision_15" type="mesh" mesh="dessert_fork_collision_15" class="collision" />
+            <geom name="dessert_fork_collision_16" type="mesh" mesh="dessert_fork_collision_16" class="collision" />
+        </body>
+    </worldbody>
+    <equality />
+    <contact />
+</mujoco>
