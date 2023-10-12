@@ -1,6 +1,6 @@
 # Blender 3.6.4
 # www.blender.org
-mtllib DessertFork.mtl
+mtllib DesertFork.mtl
 o DessertFork
 v 0.076647 -0.006715 0.003966
 v 0.076014 -0.007106 0.003942
