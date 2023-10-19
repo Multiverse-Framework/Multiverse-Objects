@@ -1,0 +1,43 @@
+#usda 1.0
+(
+    defaultPrim = "M_BigBowl"
+    upAxis = "Z"
+)
+
+def Material "M_BigBowl" (
+    assetInfo = {
+        asset identifier = @../../../../../../Istabraq/Multiverse_Objects/Multiverse-Objects/static_objects/Big_Bowl/Meshes/usda/Assets/Game/M_BigBowl.usda@
+        string name = "M_BigBowl"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_BigBowl.M_BigBowl"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.10.18-13.57.23"
+        }
+        string version = "70CB26447E1594DAE7CD3A0D6C88A7CAE59B4171"
+    }
+)
+{
+    token outputs:surface.connect = </M_BigBowl/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_BigBowl/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_BigBowl.M_BigBowl@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor = (1, 1, 1)
+        float inputs:metallic = 0
+        float inputs:occlusion = 1
+        float inputs:roughness = 0.20000002
+        float inputs:specular = 0.29803923
+        token outputs:surface
+    }
+}
+

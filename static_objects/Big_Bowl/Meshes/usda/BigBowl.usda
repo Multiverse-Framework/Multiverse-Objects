@@ -1,0 +1,31 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Istabraq/Multiverse_Objects/Multiverse-Objects/static_objects/Big_Bowl/Meshes/usda/BigBowl.usda@
+        string name = "NewMap"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Game/NewMap.NewMap"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.10.18-13.57.23"
+        }
+        string version = "A7EC09D214C3B1986226BFB2BFCC506ADBBD8ACF"
+    }
+)
+{
+    def Mesh "SM_BigBowl" (
+        prepend references = @Assets/Game/SM_BigBowl.usda@
+    )
+    {
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (1, -0, 0, 0), (0, 1, -0, 0), (0, 0, 1, 0), (-70.00000002069892, 350, 3.713600509663527, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+}
+
