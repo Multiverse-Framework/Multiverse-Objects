@@ -1,0 +1,63 @@
+#usda 1.0
+(
+    defaultPrim = "M_DiningChair_1"
+    upAxis = "Z"
+)
+
+def Material "M_DiningChair_1" (
+    assetInfo = {
+        asset identifier = @../../../../../../Istabraq/Multiverse_Objects/Multiverse-Objects/static_objects/dining_chair/DiningChair/Assets/Game/M_DiningChair_1.usda@
+        string name = "M_DiningChair_1"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_DiningChair_1.M_DiningChair_1"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.10.19-16.21.31"
+        }
+        string version = "FCB1F55F8B5047CE2F656989B81493857F01A601"
+    }
+)
+{
+    token inputs:stPrimvarName = "st"
+    token outputs:surface.connect = </M_DiningChair_1/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_DiningChair_1/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_DiningChair_1.M_DiningChair_1@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor.connect = </M_DiningChair_1/diffuseTexture.outputs:rgb>
+        float inputs:metallic = 0
+        float inputs:occlusion = 1
+        float inputs:roughness = 0.49803925
+        float inputs:specular = 0.49803925
+        token outputs:surface
+    }
+
+    def Shader "PrimvarReader"
+    {
+        uniform token info:id = "UsdPrimvarReader_float2"
+        string inputs:varname.connect = </M_DiningChair_1.inputs:stPrimvarName>
+        token outputs:result
+    }
+
+    def Shader "diffuseTexture"
+    {
+        uniform token info:id = "UsdUVTexture"
+        float4 inputs:fallback = (0, 0, 0, 1)
+        asset inputs:file = @Textures/Game_M_DiningChair_1_BaseColor.png@
+        token inputs:sourceColorSpace = "sRGB"
+        float2 inputs:st.connect = </M_DiningChair_1/PrimvarReader.outputs:result>
+        token inputs:wrapS = "repeat"
+        token inputs:wrapT = "repeat"
+        color3f outputs:rgb
+    }
+}
+

@@ -1,0 +1,31 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Istabraq/Multiverse_Objects/Multiverse-Objects/static_objects/dining_chair/DiningChair/DiningChair.usda@
+        string name = "ThirdPersonMap"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.10.19-16.21.31"
+        }
+        string version = "9F9E1824E471716C827D3B52CD9CFD9AE64D7F8B"
+    }
+)
+{
+    def Xform "SM_DiningChair" (
+        prepend references = @Assets/Game/SM_DiningChair.usda@
+    )
+    {
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (1, -0, 0, 0), (0, 1, -0, 0), (0, 0, 1, 0), (795.6683337207756, -1259.2429262505048, 127.51855899621603, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+}
+
