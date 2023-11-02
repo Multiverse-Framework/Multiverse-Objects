@@ -1,0 +1,44 @@
+#usda 1.0
+(
+    defaultPrim = "M_ShortGlass"
+    upAxis = "Z"
+)
+
+def Material "M_ShortGlass" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/Short_Glass/meshes/usda/Assets/Game/M_ShortGlass.usda@
+        string name = "M_ShortGlass"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_ShortGlass.M_ShortGlass"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.02-15.52.03"
+        }
+        string version = "A0336CAE683FDF1A31DF836A0D46F6AB606FA74C"
+    }
+)
+{
+    token outputs:surface.connect = </M_ShortGlass/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_ShortGlass/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_ShortGlass.M_ShortGlass@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor = (0.31398872, 0.38642943, 0.3662526)
+        float inputs:metallic = 1
+        float inputs:occlusion = 1
+        float inputs:opacity = 0.20392159
+        float inputs:roughness = 0
+        float inputs:specular = 1
+        token outputs:surface
+    }
+}
+

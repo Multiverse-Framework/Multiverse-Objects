@@ -1,0 +1,43 @@
+#usda 1.0
+(
+    defaultPrim = "M_ClassicPlate16cm"
+    upAxis = "Z"
+)
+
+def Material "M_ClassicPlate16cm" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/Classic_Plate_16cm/meshes/usda/Assets/Game/M_ClassicPlate16cm.usda@
+        string name = "M_ClassicPlate16cm"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_ClassicPlate16cm.M_ClassicPlate16cm"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.02-15.28.37"
+        }
+        string version = "BAE07CC8011C22F68A71CF200F10B1B22438A70E"
+    }
+)
+{
+    token outputs:surface.connect = </M_ClassicPlate16cm/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_ClassicPlate16cm/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_ClassicPlate16cm.M_ClassicPlate16cm@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor = (1, 1, 1)
+        float inputs:metallic = 0
+        float inputs:occlusion = 1
+        float inputs:roughness = 0.20000002
+        float inputs:specular = 0.29803923
+        token outputs:surface
+    }
+}
+
