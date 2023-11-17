@@ -1,0 +1,31 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Istabraq/Multiverse_Objects/Multiverse-Objects/static_objects/Classic_Plate_23cm/meshes/usda/ClassicPlate23cm.usda@
+        string name = "NewMap"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Game/NewMap.NewMap"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.17-11.41.54"
+        }
+        string version = "808B713C4D2717901BA8A58945FF7042401797D0"
+    }
+)
+{
+    def Mesh "SM_ClassicPlate23cm" (
+        prepend references = @Assets/Game/SM_ClassicPlate23cm.usda@
+    )
+    {
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (1, -0, 0, 0), (0, 1, -0, 0), (0, 0, 1, 0), (-730, -210, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+}
+
