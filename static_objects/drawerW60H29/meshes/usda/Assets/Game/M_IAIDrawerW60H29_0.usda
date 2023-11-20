@@ -1,0 +1,64 @@
+#usda 1.0
+(
+    defaultPrim = "M_IAIDrawerW60H29_0"
+    upAxis = "Z"
+)
+
+def Material "M_IAIDrawerW60H29_0" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/IAIDrawerW60H29/meshes/usda/Assets/Game/M_IAIDrawerW60H29_0.usda@
+        string name = "M_IAIDrawerW60H29_0"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_IAIDrawerW60H29_0.M_IAIDrawerW60H29_0"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.18-19.10.09"
+        }
+        string version = "DEAC0026DAB048883EEA0A3D6F356ABD13EBF416"
+    }
+)
+{
+    token inputs:stPrimvarName = "st"
+    token outputs:surface.connect = </M_IAIDrawerW60H29_0/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_IAIDrawerW60H29_0/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_IAIDrawerW60H29_0.M_IAIDrawerW60H29_0@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor = (0.5647115, 0.61049557, 0.61049557)
+        float inputs:metallic = 0
+        normal3f inputs:normal.connect = </M_IAIDrawerW60H29_0/normalTexture.outputs:rgb>
+        float inputs:occlusion = 1
+        float inputs:roughness = 0.49803925
+        float inputs:specular = 0.49803925
+        token outputs:surface
+    }
+
+    def Shader "PrimvarReader"
+    {
+        uniform token info:id = "UsdPrimvarReader_float2"
+        string inputs:varname.connect = </M_IAIDrawerW60H29_0.inputs:stPrimvarName>
+        token outputs:result
+    }
+
+    def Shader "normalTexture"
+    {
+        uniform token info:id = "UsdUVTexture"
+        float4 inputs:fallback = (0, 0, 1, 1)
+        asset inputs:file = @Textures/Game_M_IAIDrawerW60H29_0_Normal.png@
+        token inputs:sourceColorSpace = "raw"
+        float2 inputs:st.connect = </M_IAIDrawerW60H29_0/PrimvarReader.outputs:result>
+        token inputs:wrapS = "repeat"
+        token inputs:wrapT = "repeat"
+        normal3f outputs:rgb
+    }
+}
+

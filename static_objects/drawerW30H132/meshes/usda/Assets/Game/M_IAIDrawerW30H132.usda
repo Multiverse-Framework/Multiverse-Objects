@@ -1,0 +1,43 @@
+#usda 1.0
+(
+    defaultPrim = "M_IAIDrawerW30H132"
+    upAxis = "Z"
+)
+
+def Material "M_IAIDrawerW30H132" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/IAIDrawerW30H132/meshes/usda/Assets/Game/M_IAIDrawerW30H132.usda@
+        string name = "M_IAIDrawerW30H132"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_IAIDrawerW30H132.M_IAIDrawerW30H132"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.18-18.49.25"
+        }
+        string version = "B5A2C3C2542DE202A94ED7AB7DF40C060A816FA6"
+    }
+)
+{
+    token outputs:surface.connect = </M_IAIDrawerW30H132/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_IAIDrawerW30H132/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_IAIDrawerW30H132.M_IAIDrawerW30H132@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor = (0.5647115, 0.61049557, 0.61049557)
+        float inputs:metallic = 0
+        float inputs:occlusion = 1
+        float inputs:roughness = 0.49803925
+        float inputs:specular = 0.49803925
+        token outputs:surface
+    }
+}
+
