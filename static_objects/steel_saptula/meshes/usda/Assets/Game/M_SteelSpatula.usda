@@ -1,0 +1,88 @@
+#usda 1.0
+(
+    defaultPrim = "M_SteelSpatula"
+    upAxis = "Z"
+)
+
+def Material "M_SteelSpatula" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/steel_saptula/meshes/usda/Assets/Game/M_SteelSpatula.usda@
+        string name = "M_SteelSpatula"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_SteelSpatula.M_SteelSpatula"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.20-18.53.52"
+        }
+        string version = "A408DD01FA3E399504BE718BFC1E2795860A6060"
+    }
+)
+{
+    token inputs:stPrimvarName = "st"
+    token outputs:surface.connect = </M_SteelSpatula/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_SteelSpatula/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_SteelSpatula.M_SteelSpatula@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor = (0.4286905, 0.4286905, 0.4286905)
+        float inputs:metallic = 1
+        normal3f inputs:normal.connect = </M_SteelSpatula/normalTexture.outputs:rgb>
+        float inputs:occlusion = 1
+        float inputs:roughness.connect = </M_SteelSpatula/roughnessTexture.outputs:r>
+        float inputs:specular.connect = </M_SteelSpatula/specularTexture.outputs:r>
+        token outputs:surface
+    }
+
+    def Shader "PrimvarReader"
+    {
+        uniform token info:id = "UsdPrimvarReader_float2"
+        string inputs:varname.connect = </M_SteelSpatula.inputs:stPrimvarName>
+        token outputs:result
+    }
+
+    def Shader "specularTexture"
+    {
+        uniform token info:id = "UsdUVTexture"
+        float4 inputs:fallback = (0.5, 0.5, 0.5, 1)
+        asset inputs:file = @Textures/Game_M_SteelSpatula_Specular.png@
+        token inputs:sourceColorSpace = "raw"
+        float2 inputs:st.connect = </M_SteelSpatula/PrimvarReader.outputs:result>
+        token inputs:wrapS = "repeat"
+        token inputs:wrapT = "repeat"
+        float outputs:r
+    }
+
+    def Shader "roughnessTexture"
+    {
+        uniform token info:id = "UsdUVTexture"
+        float4 inputs:fallback = (0.5, 0.5, 0.5, 1)
+        asset inputs:file = @Textures/Game_M_SteelSpatula_Roughness.png@
+        token inputs:sourceColorSpace = "raw"
+        float2 inputs:st.connect = </M_SteelSpatula/PrimvarReader.outputs:result>
+        token inputs:wrapS = "repeat"
+        token inputs:wrapT = "repeat"
+        float outputs:r
+    }
+
+    def Shader "normalTexture"
+    {
+        uniform token info:id = "UsdUVTexture"
+        float4 inputs:fallback = (0, 0, 1, 1)
+        asset inputs:file = @Textures/Game_M_SteelSpatula_Normal.png@
+        token inputs:sourceColorSpace = "raw"
+        float2 inputs:st.connect = </M_SteelSpatula/PrimvarReader.outputs:result>
+        token inputs:wrapS = "repeat"
+        token inputs:wrapT = "repeat"
+        normal3f outputs:rgb
+    }
+}
+

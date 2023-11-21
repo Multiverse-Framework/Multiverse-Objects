@@ -1,0 +1,31 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/peeling_knife/meshes/usda/PeelingKnife.usda@
+        string name = "Untitled"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Game/Untitled.Untitled"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.20-15.11.19"
+        }
+        string version = "938500543CD6CD886F8A1D7D9339298488DF091D"
+    }
+)
+{
+    def Mesh "SM_PeelingKnife" (
+        prepend references = @Assets/Game/SM_PeelingKnife.usda@
+    )
+    {
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (1, -0, 0, 0), (0, 1, -0, 0), (0, 0, 1, 0), (1290, -560, 10, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+}
+

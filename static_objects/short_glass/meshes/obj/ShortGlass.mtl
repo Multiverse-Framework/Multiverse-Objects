@@ -1,0 +1,12 @@
+# Blender MTL File: 'short_glass.blend'
+# Material Count: 1
+
+newmtl M_ShortGlass
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.313989 0.386429 0.366253
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 3
