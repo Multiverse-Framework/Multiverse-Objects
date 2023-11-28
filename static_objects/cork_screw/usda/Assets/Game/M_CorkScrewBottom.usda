@@ -1,0 +1,43 @@
+#usda 1.0
+(
+    defaultPrim = "M_CorkScrewBottom"
+    upAxis = "Z"
+)
+
+def Material "M_CorkScrewBottom" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/cork_screw/usda/Assets/Game/M_CorkScrewBottom.usda@
+        string name = "M_CorkScrewBottom"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_CorkScrewBottom.M_CorkScrewBottom"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.24-12.20.47"
+        }
+        string version = "7A8BC2455190EB3BB0A6DEACEB18336D9D4F7645"
+    }
+)
+{
+    token outputs:surface.connect = </M_CorkScrewBottom/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_CorkScrewBottom/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_CorkScrewBottom.M_CorkScrewBottom@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor = (0.9646862, 0.9646862, 0.9646862)
+        float inputs:metallic = 1
+        float inputs:occlusion = 1
+        float inputs:roughness = 0
+        float inputs:specular = 0.49803925
+        token outputs:surface
+    }
+}
+

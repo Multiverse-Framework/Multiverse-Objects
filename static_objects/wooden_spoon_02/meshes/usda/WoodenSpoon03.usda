@@ -1,0 +1,31 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/wooden_spoon_03/meshes/usda/WoodenSpoon03.usda@
+        string name = "Untitled"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Game/Untitled.Untitled"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.24-13.15.13"
+        }
+        string version = "B88E223820F090B6237E9413012618AE146DE038"
+    }
+)
+{
+    def Xform "SM_WoodenSpoon03" (
+        prepend references = @Assets/Game/SM_WoodenSpoon03.usda@
+    )
+    {
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (1, -0, 0, 0), (0, 1, -0, 0), (0, 0, 1, 0), (1190, -440, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+}
+

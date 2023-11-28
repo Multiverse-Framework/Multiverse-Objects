@@ -1,0 +1,63 @@
+#usda 1.0
+(
+    defaultPrim = "M_WoodenSpoon03"
+    upAxis = "Z"
+)
+
+def Material "M_WoodenSpoon03" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/wooden_spoon_03/meshes/usda/Assets/Game/M_WoodenSpoon03.usda@
+        string name = "M_WoodenSpoon03"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_WoodenSpoon03.M_WoodenSpoon03"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.28-16.54.35"
+        }
+        string version = "20979187FF32254B77A867C43723D68071941C23"
+    }
+)
+{
+    token inputs:stPrimvarName = "st"
+    token outputs:surface.connect = </M_WoodenSpoon03/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_WoodenSpoon03/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_WoodenSpoon03.M_WoodenSpoon03@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor.connect = </M_WoodenSpoon03/diffuseTexture.outputs:rgb>
+        float inputs:metallic = 0
+        float inputs:occlusion = 1
+        float inputs:roughness = 0.49803925
+        float inputs:specular = 0.49803925
+        token outputs:surface
+    }
+
+    def Shader "PrimvarReader"
+    {
+        uniform token info:id = "UsdPrimvarReader_float2"
+        string inputs:varname.connect = </M_WoodenSpoon03.inputs:stPrimvarName>
+        token outputs:result
+    }
+
+    def Shader "diffuseTexture"
+    {
+        uniform token info:id = "UsdUVTexture"
+        float4 inputs:fallback = (0, 0, 0, 1)
+        asset inputs:file = @Textures/Game_M_WoodenSpoon03_BaseColor.png@
+        token inputs:sourceColorSpace = "sRGB"
+        float2 inputs:st.connect = </M_WoodenSpoon03/PrimvarReader.outputs:result>
+        token inputs:wrapS = "repeat"
+        token inputs:wrapT = "repeat"
+        color3f outputs:rgb
+    }
+}
+
