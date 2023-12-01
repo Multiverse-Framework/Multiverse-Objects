@@ -1,0 +1,44 @@
+#usda 1.0
+(
+    defaultPrim = "M_RedwineGlass"
+    upAxis = "Z"
+)
+
+def Material "M_RedwineGlass" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/redwine_glass/meshes/usda/Assets/Game/M_RedwineGlass.usda@
+        string name = "M_RedwineGlass"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_RedwineGlass.M_RedwineGlass"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.30-18.12.47"
+        }
+        string version = "16C36A14E3D15EEA3227CCF502BF6649110A36FA"
+    }
+)
+{
+    token outputs:surface.connect = </M_RedwineGlass/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_RedwineGlass/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_RedwineGlass.M_RedwineGlass@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor = (1, 1, 1)
+        float inputs:metallic = 1
+        float inputs:occlusion = 1
+        float inputs:opacity = 0.20392159
+        float inputs:roughness = 0
+        float inputs:specular = 1
+        token outputs:surface
+    }
+}
+
