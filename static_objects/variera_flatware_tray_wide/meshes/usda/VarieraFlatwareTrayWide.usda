@@ -1,0 +1,31 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/variera_flatware_tray_wide/meshes/usda/VarieraFlatwareTrayWide.usda@
+        string name = "Untitled"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Game/Untitled.Untitled"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.12.01-14.29.31"
+        }
+        string version = "332A76E8E9D66083C12A6FAA092F33FA696A419F"
+    }
+)
+{
+    def Mesh "SM_VarieraFlatwareTrayWide" (
+        prepend references = @Assets/Game/SM_VarieraFlatwareTrayWide.usda@
+    )
+    {
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (1, -0, 0, 0), (0, 1, -0, 0), (0, 0, 1, 0), (1630, 680, 10, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+}
+
