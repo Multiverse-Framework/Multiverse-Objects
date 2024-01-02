@@ -1,0 +1,22 @@
+<mujoco model="beer_bottle">
+    <compiler angle="radian" meshdir="../meshes/obj/" texturedir="../meshes/textures/" autolimits="true" />
+    <asset>
+        <texture name="beer_bottle_body_visual" type="2d" file="T_BeerBottleBody.png" />
+        <material name="beer_bottle_body_visual" texture="beer_bottle_body_visual" />
+        <mesh name="beer_bottle_body_visual" file="BeerBottleBody.obj" />
+        <texture name="beer_bottle_cap_visual" type="2d" file="T_BeerBottleCap.png" />
+        <material name="beer_bottle_cap_visual" texture="beer_bottle_cap_visual" />
+        <mesh name="beer_bottle_cap_visual" file="BeerBottleCap.obj" />
+    </asset>
+    <worldbody>
+        <body name="beer_bottle">
+            <freejoint />
+            <geom name="beer_bottle_body_visual" pos="0.0 0.0 0.0" quat="1.0 0.0 0.0 0.0" 
+                type="mesh" material="beer_bottle_body_visual" mesh="beer_bottle_body_visual" 
+                contype="0" conaffinity="0" />
+            <geom name="beer_bottle_cap_visual" pos="0.0 0.0 0.0" quat="1.0 0.0 0.0 0.0" 
+                type="mesh" material="beer_bottle_cap_visual" mesh="beer_bottle_cap_visual" 
+                contype="0" conaffinity="0" />
+        </body>
+    </worldbody>
+</mujoco>
