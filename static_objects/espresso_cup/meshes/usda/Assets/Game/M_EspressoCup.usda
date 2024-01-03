@@ -1,0 +1,43 @@
+#usda 1.0
+(
+    defaultPrim = "M_EspressoCup"
+    upAxis = "Z"
+)
+
+def Material "M_EspressoCup" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/espresso_cup/meshes/usda/Assets/Game/M_EspressoCup.usda@
+        string name = "M_EspressoCup"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_EspressoCup.M_EspressoCup"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.30-19.03.28"
+        }
+        string version = "5BC485CF74509552E8F59D53A135C13D6702961D"
+    }
+)
+{
+    token outputs:surface.connect = </M_EspressoCup/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_EspressoCup/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_EspressoCup.M_EspressoCup@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor = (1, 1, 1)
+        float inputs:metallic = 0
+        float inputs:occlusion = 1
+        float inputs:roughness = 0.20000002
+        float inputs:specular = 0.29803923
+        token outputs:surface
+    }
+}
+

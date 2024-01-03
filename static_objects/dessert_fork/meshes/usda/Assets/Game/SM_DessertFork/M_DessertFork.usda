@@ -1,0 +1,43 @@
+#usda 1.0
+(
+    defaultPrim = "M_DessertFork"
+    upAxis = "Z"
+)
+
+def Material "M_DessertFork" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/giang/OneDrive/Desktop/DesertFork/Assets/Game/SM_DessertFork/M_DessertFork.usda@
+        string name = "M_DessertFork"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/SM_DessertFork/M_DessertFork.M_DessertFork"
+            string engineVersion = "5.3.0-27405482+++UE5+Release-5.3"
+            string exportTime = "2023.10.10-14.05.56"
+        }
+        string version = "CFE9B305234B99323A8795ABAB35C7C9BE6432EB"
+    }
+)
+{
+    token outputs:surface.connect = </M_DessertFork/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_DessertFork/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/SM_DessertFork/M_DessertFork.M_DessertFork@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor = (0.9301109, 0.9301109, 0.9301109)
+        float inputs:metallic = 1
+        float inputs:occlusion = 1
+        float inputs:roughness = 0.20000002
+        float inputs:specular = 0.49803925
+        token outputs:surface
+    }
+}
+

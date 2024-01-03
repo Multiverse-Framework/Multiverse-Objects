@@ -1,0 +1,43 @@
+#usda 1.0
+(
+    defaultPrim = "M_TableKnife"
+    upAxis = "Z"
+)
+
+def Material "M_TableKnife" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/table_knife/meshes/usda/Assets/Game/M_TableKnife.usda@
+        string name = "M_TableKnife"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_TableKnife.M_TableKnife"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.29-16.51.31"
+        }
+        string version = "3732CA0992EF73200B3A650977294C44CD617BDB"
+    }
+)
+{
+    token outputs:surface.connect = </M_TableKnife/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_TableKnife/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_TableKnife.M_TableKnife@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor = (0.9046612, 0.9046612, 0.9046612)
+        float inputs:metallic = 1
+        float inputs:occlusion = 1
+        float inputs:roughness = 0.20000002
+        float inputs:specular = 0.49803925
+        token outputs:surface
+    }
+}
+

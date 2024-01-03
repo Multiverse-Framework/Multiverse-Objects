@@ -1,0 +1,12 @@
+# Blender MTL File: 'soup_spoon.blend'
+# Material Count: 1
+
+newmtl M_SoupSpoon
+Ns 639.999971
+Ka 1.000000 1.000000 1.000000
+Kd 0.955973 0.955973 0.955973
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 3

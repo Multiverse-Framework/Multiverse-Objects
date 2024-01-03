@@ -1,0 +1,44 @@
+#usda 1.0
+(
+    defaultPrim = "M_IAIDrawerW60H14_0"
+    upAxis = "Z"
+)
+
+def Material "M_IAIDrawerW60H14_0" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/IAIDrawerW60H14/meshes/usda/Assets/Game/M_IAIDrawerW60H14_0.usda@
+        string name = "M_IAIDrawerW60H14_0"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_IAIDrawerW60H14_0.M_IAIDrawerW60H14_0"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.18-18.55.45"
+        }
+        string version = "95600B2C52E7DD305FF0EF4F31F00140181C029C"
+    }
+)
+{
+    token outputs:surface.connect = </M_IAIDrawerW60H14_0/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_IAIDrawerW60H14_0/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_IAIDrawerW60H14_0.M_IAIDrawerW60H14_0@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor = (0.5647115, 0.61049557, 0.61049557)
+        float inputs:metallic = 0
+        normal3f inputs:normal = (0.49803925, -0.49803925, 1)
+        float inputs:occlusion = 1
+        float inputs:roughness = 0.49803925
+        float inputs:specular = 0.49803925
+        token outputs:surface
+    }
+}
+

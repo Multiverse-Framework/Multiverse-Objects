@@ -1,0 +1,63 @@
+#usda 1.0
+(
+    defaultPrim = "M_IAIDrawerW60H29_1"
+    upAxis = "Z"
+)
+
+def Material "M_IAIDrawerW60H29_1" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/IAIDrawerW60H29/meshes/usda/Assets/Game/M_IAIDrawerW60H29_1.usda@
+        string name = "M_IAIDrawerW60H29_1"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_IAIDrawerW60H29_1.M_IAIDrawerW60H29_1"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.18-19.10.49"
+        }
+        string version = "06D3089F39963ECB53F8FC4E72D0F1D3361C6358"
+    }
+)
+{
+    token inputs:stPrimvarName = "st"
+    token outputs:surface.connect = </M_IAIDrawerW60H29_1/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_IAIDrawerW60H29_1/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_IAIDrawerW60H29_1.M_IAIDrawerW60H29_1@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor = (0.22322796, 0.22322796, 0.22322796)
+        float inputs:metallic = 0
+        float inputs:occlusion.connect = </M_IAIDrawerW60H29_1/occlusionTexture.outputs:r>
+        float inputs:roughness = 0.49803925
+        float inputs:specular = 0.69803923
+        token outputs:surface
+    }
+
+    def Shader "PrimvarReader"
+    {
+        uniform token info:id = "UsdPrimvarReader_float2"
+        string inputs:varname.connect = </M_IAIDrawerW60H29_1.inputs:stPrimvarName>
+        token outputs:result
+    }
+
+    def Shader "occlusionTexture"
+    {
+        uniform token info:id = "UsdUVTexture"
+        float4 inputs:fallback = (1, 1, 1, 1)
+        asset inputs:file = @Textures/Game_M_IAIDrawerW60H29_1_AmbientOcclusion.png@
+        token inputs:sourceColorSpace = "raw"
+        float2 inputs:st.connect = </M_IAIDrawerW60H29_1/PrimvarReader.outputs:result>
+        token inputs:wrapS = "repeat"
+        token inputs:wrapT = "repeat"
+        float outputs:r
+    }
+}
+

@@ -1,0 +1,43 @@
+#usda 1.0
+(
+    defaultPrim = "M_CutleryHolder"
+    upAxis = "Z"
+)
+
+def Material "M_CutleryHolder" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/cutlery_holder/meshes/usda/Assets/Game/M_CutleryHolder.usda@
+        string name = "M_CutleryHolder"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_CutleryHolder.M_CutleryHolder"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.12.01-13.53.58"
+        }
+        string version = "97381F378D3E022279A3F51D09309F5D70CC8084"
+    }
+)
+{
+    token outputs:surface.connect = </M_CutleryHolder/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_CutleryHolder/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_CutleryHolder.M_CutleryHolder@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor = (0.8713671, 0.8713671, 0.8713671)
+        float inputs:metallic = 1
+        float inputs:occlusion = 1
+        float inputs:roughness = 0.29803923
+        float inputs:specular = 0.49803925
+        token outputs:surface
+    }
+}
+

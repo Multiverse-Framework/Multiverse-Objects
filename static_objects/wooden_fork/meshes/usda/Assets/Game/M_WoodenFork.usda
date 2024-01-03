@@ -1,0 +1,63 @@
+#usda 1.0
+(
+    defaultPrim = "M_WoodenFork"
+    upAxis = "Z"
+)
+
+def Material "M_WoodenFork" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/wooden_fork/meshes/usda/Assets/Game/M_WoodenFork.usda@
+        string name = "M_WoodenFork"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_WoodenFork.M_WoodenFork"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.20-19.00.18"
+        }
+        string version = "4EF0A416B78783C33E87FBA3DBE7DF9DC838A9E0"
+    }
+)
+{
+    token inputs:stPrimvarName = "st"
+    token outputs:surface.connect = </M_WoodenFork/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_WoodenFork/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_WoodenFork.M_WoodenFork@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor.connect = </M_WoodenFork/diffuseTexture.outputs:rgb>
+        float inputs:metallic = 0
+        float inputs:occlusion = 1
+        float inputs:roughness = 0.49803925
+        float inputs:specular = 0.49803925
+        token outputs:surface
+    }
+
+    def Shader "PrimvarReader"
+    {
+        uniform token info:id = "UsdPrimvarReader_float2"
+        string inputs:varname.connect = </M_WoodenFork.inputs:stPrimvarName>
+        token outputs:result
+    }
+
+    def Shader "diffuseTexture"
+    {
+        uniform token info:id = "UsdUVTexture"
+        float4 inputs:fallback = (0, 0, 0, 1)
+        asset inputs:file = @Textures/Game_M_WoodenFork_BaseColor.png@
+        token inputs:sourceColorSpace = "sRGB"
+        float2 inputs:st.connect = </M_WoodenFork/PrimvarReader.outputs:result>
+        token inputs:wrapS = "repeat"
+        token inputs:wrapT = "repeat"
+        color3f outputs:rgb
+    }
+}
+

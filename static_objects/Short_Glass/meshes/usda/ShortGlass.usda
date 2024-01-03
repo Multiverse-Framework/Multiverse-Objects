@@ -1,0 +1,31 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/Short_Glass/meshes/usda/ShortGlass.usda@
+        string name = "Untitled"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Game/Untitled.Untitled"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.02-15.52.04"
+        }
+        string version = "2D6E19AFE5AEE125703C5B54A73CEF5F8F062D7D"
+    }
+)
+{
+    def Mesh "SM_ShortGlass" (
+        prepend references = @Assets/Game/SM_ShortGlass.usda@
+    )
+    {
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (1, -0, 0, 0), (0, 1, -0, 0), (0, 0, 1, 0), (620, -400, 10, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+}
+
