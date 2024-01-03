@@ -1,0 +1,31 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/giang/OneDrive/Desktop/DesertFork/NewMap.usda@
+        string name = "NewMap"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Game/NewMap.NewMap"
+            string engineVersion = "5.3.0-27405482+++UE5+Release-5.3"
+            string exportTime = "2023.10.10-14.05.56"
+        }
+        string version = "AECE5611EAEAB761E0615121336968B5E8430290"
+    }
+)
+{
+    def Mesh "SM_DessertFork" (
+        prepend references = @Assets/Game/SM_DessertFork/SM_DessertFork.usda@
+    )
+    {
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (1, -0, 0, 0), (0, 1, -0, 0), (0, 0, 1, 0), (-260, 330, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+}
+

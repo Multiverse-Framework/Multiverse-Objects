@@ -1,0 +1,43 @@
+#usda 1.0
+(
+    defaultPrim = "M_PizzaCutterHandle"
+    upAxis = "Z"
+)
+
+def Material "M_PizzaCutterHandle" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/pizza_cutter_handle/meshes/usda/Assets/Game/M_PizzaCutterHandle.usda@
+        string name = "M_PizzaCutterHandle"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_PizzaCutterHandle.M_PizzaCutterHandle"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.20-15.00.19"
+        }
+        string version = "AD93B7328B7E76FFB99488D2469DCBA519E4D259"
+    }
+)
+{
+    token outputs:surface.connect = </M_PizzaCutterHandle/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_PizzaCutterHandle/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_PizzaCutterHandle.M_PizzaCutterHandle@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor = (0.07818742, 0.07818742, 0.07818742)
+        float inputs:metallic = 0
+        float inputs:occlusion = 1
+        float inputs:roughness = 0.49803925
+        float inputs:specular = 0.49803925
+        token outputs:surface
+    }
+}
+

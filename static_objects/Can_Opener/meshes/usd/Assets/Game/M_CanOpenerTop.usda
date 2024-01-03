@@ -1,0 +1,43 @@
+#usda 1.0
+(
+    defaultPrim = "M_CanOpenerTop"
+    upAxis = "Z"
+)
+
+def Material "M_CanOpenerTop" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/Can_Opener/meshes/usd/Assets/Game/M_CanOpenerTop.usda@
+        string name = "M_CanOpenerTop"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_CanOpenerTop.M_CanOpenerTop"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.08-16.38.24"
+        }
+        string version = "C26C67B5FCF592895B292C87E2B591E18A3455F4"
+    }
+)
+{
+    token outputs:surface.connect = </M_CanOpenerTop/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_CanOpenerTop/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_CanOpenerTop.M_CanOpenerTop@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor = (0.7529422, 0.7529422, 0.7529422)
+        float inputs:metallic = 1
+        float inputs:occlusion = 1
+        float inputs:roughness = 0.20000002
+        float inputs:specular = 0.49803925
+        token outputs:surface
+    }
+}
+

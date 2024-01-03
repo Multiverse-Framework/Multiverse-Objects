@@ -1,0 +1,43 @@
+#usda 1.0
+(
+    defaultPrim = "M_SmallBowl"
+    upAxis = "Z"
+)
+
+def Material "M_SmallBowl" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/small_bowl/meshes/usda/Assets/Game/M_SmallBowl.usda@
+        string name = "M_SmallBowl"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_SmallBowl.M_SmallBowl"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.30-18.36.14"
+        }
+        string version = "EDD1BCA0918811C8D29F09091728E41D3A5A02EB"
+    }
+)
+{
+    token outputs:surface.connect = </M_SmallBowl/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_SmallBowl/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_SmallBowl.M_SmallBowl@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor = (1, 1, 1)
+        float inputs:metallic = 0
+        float inputs:occlusion = 1
+        float inputs:roughness = 0.20000002
+        float inputs:specular = 0.29803923
+        token outputs:surface
+    }
+}
+

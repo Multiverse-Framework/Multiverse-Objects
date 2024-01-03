@@ -1,0 +1,12 @@
+# Blender MTL File: 'dinner_fork.blend'
+# Material Count: 1
+
+newmtl M_Fork_Dinner
+Ns 639.999971
+Ka 1.000000 1.000000 1.000000
+Kd 0.913099 0.913099 0.913099
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 3

@@ -1,0 +1,31 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/classic_plate_28cm/meshes/usda/ClassicPlate28cm.usda@
+        string name = "Untitled"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Game/Untitled.Untitled"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.18-18.32.49"
+        }
+        string version = "9E9BDC6F6205F86E39922979681868413972E5AF"
+    }
+)
+{
+    def Mesh "SM_ClassicPlate28cm" (
+        prepend references = @Assets/Game/SM_ClassicPlate28cm.usda@
+    )
+    {
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (1, -0, 0, 0), (0, 1, -0, 0), (0, 0, 1, 0), (510, -1160, 10, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+}
+

@@ -1,0 +1,44 @@
+#usda 1.0
+(
+    defaultPrim = "M_TallGlass"
+    upAxis = "Z"
+)
+
+def Material "M_TallGlass" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/tall_glass/meshes/usda/Assets/Game/M_TallGlass.usda@
+        string name = "M_TallGlass"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_TallGlass.M_TallGlass"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.30-18.25.30"
+        }
+        string version = "F0E2BA91755E0D9D061B6CC1579E6EB747CAA7CB"
+    }
+)
+{
+    token outputs:surface.connect = </M_TallGlass/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_TallGlass/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_TallGlass.M_TallGlass@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor = (0.9646862, 1, 0.9646862)
+        float inputs:metallic = 1
+        float inputs:occlusion = 1
+        float inputs:opacity = 0.4901961
+        float inputs:roughness = 0
+        float inputs:specular = 1
+        token outputs:surface
+    }
+}
+

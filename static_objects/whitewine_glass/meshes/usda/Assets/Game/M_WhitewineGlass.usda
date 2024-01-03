@@ -1,0 +1,44 @@
+#usda 1.0
+(
+    defaultPrim = "M_WhitewineGlass"
+    upAxis = "Z"
+)
+
+def Material "M_WhitewineGlass" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/whitewine_glass/meshes/usda/Assets/Game/M_WhitewineGlass.usda@
+        string name = "M_WhitewineGlass"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_WhitewineGlass.M_WhitewineGlass"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.30-18.33.51"
+        }
+        string version = "3DCC27818371A90A84DFA8675A300D27DDF84963"
+    }
+)
+{
+    token outputs:surface.connect = </M_WhitewineGlass/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_WhitewineGlass/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_WhitewineGlass.M_WhitewineGlass@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor = (1, 1, 1)
+        float inputs:metallic = 1
+        float inputs:occlusion = 1
+        float inputs:opacity = 0.20392159
+        float inputs:roughness = 0
+        float inputs:specular = 1
+        token outputs:surface
+    }
+}
+

@@ -1,0 +1,31 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/Jokkmokk_Chair/Meshes/usda/jokkmokkChair.usda@
+        string name = "Untitled_2"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Temp/Untitled_2.Untitled_2"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.10.25-12.45.51"
+        }
+        string version = "B916CAB5BB54C01B901494B359C9123A9CDCC9ED"
+    }
+)
+{
+    def Mesh "SM_JokkmokkChair" (
+        prepend references = @Assets/Game/SM_JokkmokkChair.usda@
+    )
+    {
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (1, -0, 0, 0), (0, 1, -0, 0), (0, 0, 1, 0), (430, -340, 60, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+}
+

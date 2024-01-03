@@ -1,0 +1,31 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/baeren_marke_frische_alpenmilch_18/meshes/usda/BaerenMarkeFrischeAlpenmilch18.usda@
+        string name = "Untitled"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Game/Untitled.Untitled"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.12.07-19.16.00"
+        }
+        string version = "B216F3A6D7BCE80D1D98AAB075513B20617C6B0F"
+    }
+)
+{
+    def Mesh "SM_BaerenMarkeFrischeAlpenmilch18" (
+        prepend references = @Assets/Game/SM_BaerenMarkeFrischeAlpenmilch18.usda@
+    )
+    {
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (1, -0, 0, 0), (0, 1, -0, 0), (0, 0, 1, 0), (1770, 240, 20, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+}
+

@@ -1,0 +1,31 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/Can_Opener/meshes/usd/CanOpener.usda@
+        string name = "Untitled"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Game/Untitled.Untitled"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.08-16.38.25"
+        }
+        string version = "E399310A9D250567301D36D8A9F1F7054DE08900"
+    }
+)
+{
+    def Mesh "SM_CanOpener" (
+        prepend references = @Assets/Game/SM_CanOpener.usda@
+    )
+    {
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (1, -0, 0, 0), (0, 1, -0, 0), (0, 0, 1, 0), (310, -1040, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+}
+

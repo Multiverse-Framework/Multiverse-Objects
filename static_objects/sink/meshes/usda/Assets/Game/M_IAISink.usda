@@ -1,0 +1,63 @@
+#usda 1.0
+(
+    defaultPrim = "M_IAISink"
+    upAxis = "Z"
+)
+
+def Material "M_IAISink" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/sink/meshes/usda/Assets/Game/M_IAISink.usda@
+        string name = "M_IAISink"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_IAISink.M_IAISink"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.12.01-14.38.57"
+        }
+        string version = "D946D38716562D35D4187B37C5FC2B281D0C2474"
+    }
+)
+{
+    token inputs:stPrimvarName = "st"
+    token outputs:surface.connect = </M_IAISink/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_IAISink/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_IAISink.M_IAISink@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor.connect = </M_IAISink/diffuseTexture.outputs:rgb>
+        float inputs:metallic = 0.49803925
+        float inputs:occlusion = 1
+        float inputs:roughness = 0.49803925
+        float inputs:specular = 0.40000004
+        token outputs:surface
+    }
+
+    def Shader "PrimvarReader"
+    {
+        uniform token info:id = "UsdPrimvarReader_float2"
+        string inputs:varname.connect = </M_IAISink.inputs:stPrimvarName>
+        token outputs:result
+    }
+
+    def Shader "diffuseTexture"
+    {
+        uniform token info:id = "UsdUVTexture"
+        float4 inputs:fallback = (0, 0, 0, 1)
+        asset inputs:file = @Textures/Game_M_IAISink_BaseColor.png@
+        token inputs:sourceColorSpace = "sRGB"
+        float2 inputs:st.connect = </M_IAISink/PrimvarReader.outputs:result>
+        token inputs:wrapS = "repeat"
+        token inputs:wrapT = "repeat"
+        color3f outputs:rgb
+    }
+}
+

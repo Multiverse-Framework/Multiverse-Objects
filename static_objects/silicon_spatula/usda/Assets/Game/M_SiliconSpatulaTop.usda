@@ -1,0 +1,43 @@
+#usda 1.0
+(
+    defaultPrim = "M_SiliconSpatulaTop"
+    upAxis = "Z"
+)
+
+def Material "M_SiliconSpatulaTop" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Istabraq/Desktop/Kunst/AI Institute Bremen/Multiverse-Objects/static_objects/silicon_spatula/usda/Assets/Game/M_SiliconSpatulaTop.usda@
+        string name = "M_SiliconSpatulaTop"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/M_SiliconSpatulaTop.M_SiliconSpatulaTop"
+            string engineVersion = "5.3.1-28051148+++UE5+Release-5.3"
+            string exportTime = "2023.11.24-12.03.43"
+        }
+        string version = "86F894CDF5C7A9FC96615259BD326DE826D1671D"
+    }
+)
+{
+    token outputs:surface.connect = </M_SiliconSpatulaTop/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_SiliconSpatulaTop/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/M_SiliconSpatulaTop.M_SiliconSpatulaTop@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor = (0.59061885, 0.023153367, 0.3049873)
+        float inputs:metallic = 0
+        float inputs:occlusion = 1
+        float inputs:roughness = 0.49803925
+        float inputs:specular = 0.49803925
+        token outputs:surface
+    }
+}
+
