@@ -1,0 +1,375 @@
+<?xml version="1.0"?>
+<robot name="beer_bottle">
+    <link name="beer_bottle" />
+
+    <joint name="beer_bottle_body_joint" type="fixed">
+        <parent link="beer_bottle" />
+        <child link="beer_bottle_body" />
+        <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+    </joint>
+    <link name="beer_bottle_body">
+        <visual>
+            <geometry>
+                <mesh filename="file://../meshes/obj/BeerBottleBody.obj" />
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_001.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_002.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_003.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_004.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_005.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_006.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_007.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_008.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_009.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_010.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_011.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_012.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_013.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_014.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_015.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_016.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_017.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_018.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_019.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_020.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_021.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_022.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_023.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_024.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_025.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_026.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_027.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_028.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleBody_029.stl" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="beer_bottle_cap_joint" type="fixed">
+        <parent link="beer_bottle" />
+        <child link="beer_bottle_cap" />
+        <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+    </joint>
+    <link name="beer_bottle_cap">
+        <visual>
+            <geometry>
+                <mesh filename="file://../meshes/obj/BeerBottleCap.obj" />
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_001.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_002.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_003.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_004.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_005.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_006.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_007.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_008.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_009.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_010.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_011.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_012.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_013.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_014.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_015.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_016.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_017.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_018.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_019.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_020.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_021.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_022.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_023.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_024.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_025.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_026.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_027.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_028.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_029.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_030.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_031.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_032.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_033.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_034.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_035.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_036.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_037.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_038.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_039.stl" />
+            </geometry>
+        </collision>
+        <collision>
+            <geometry>
+                <mesh filename="file://../meshes/stl/BeerBottleCap_040.stl" />
+            </geometry>
+        </collision>
+    </link>
+</robot>
